@@ -1,17 +1,27 @@
 [
     {
-        "palabra": "apple",
-        "categoriaGramatical": "sustantivo",
-        "traduccion": "manzana"
+        "word": "apple",
+        "definition": "a round fruit with shiny red or green skin that is fairly hard and white inside",
+        "related" : ["mango", "pear", "guayaba"]
     },
     {
-        "palabra": "baby",
-        "acepciones": [
-            {
-                "categoriaGramatical": "sustantivo",
-                "traducciones": ["bebé", "mimar"]
-            }
-        ]
-        
+        "word": "gauntlet",
+        "definition": "a metal glove worn as part of a suit of armour by soldiers in the Middle Ages",
+        "related" : ["spear", "axe", "armour"]
+    },
+    {
+        "word": "kite",
+        "definition": "a toy made of a light frame covered with paper, cloth, etc., that you fly in the air at the end of one or more long strings",
+        "related" : ["toy", "air", "string"]
+    },
+    {
+        "word": "venom",
+        "definition": "the poisonous liquid that some snakes, spiders, etc. produce when they bite or sting you",
+        "related" : ["poison", "liquid", "snake"]
+    },
+    {
+        "word": "yellow",
+        "definition": "having the colour of lemons or butter",
+        "related" : ["blue", "lemon", "red"]
     }
 ]

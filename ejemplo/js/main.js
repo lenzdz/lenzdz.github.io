@@ -1,11 +1,8 @@
-// fetch("https://lenzdz.github.io/ejemplo/json/eng-esp.json")
-//     .then(response => response.json())
-//     .then(data => console.log(data));
-
 var request = new XMLHttpRequest();
 request.open("GET","https://lenzdz.github.io/ejemplo/json/eng-esp.json");
 request.onload = function() {
-    console.log(request.responseText);
+    var dictionary = request.responseText;
+    console.log(dictionary[0]);
 }
 request.send();
 

@@ -1,0 +1,44 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Diccionaro Inglés - Español</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Diccionario Inglés - Español</h1>
+    </div>
+
+    <div class="wrapper">
+        <div class="words">
+            <input type="text" id="search" placeholder="Buscar">
+            <button class="search_button" onclick="search()"><i class="fas fa-search"></i></button>
+
+            <ul id="word_list"></ul>
+        </div>
+
+        <div class="word">
+            <h3 id="word_text"></h3>
+            <p id="definition"></p>
+    
+            <hr>
+    
+            <h3>Related Words:</h3>
+            <p id="related"></p>
+        </div>
+
+    </div>
+
+    
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+    {
+        "palabra": "apple",
+        "categoriaGramatical": "sustantivo",
+        "traduccion": "manzana"
+    },
+    {
+        "palabra": "baby",
+        "acepciones": [
+            {
+                "categoriaGramatical": "sustantivo",
+                "traducciones": ["bebé"]
+            }
+        ]
+        
+    }
+]

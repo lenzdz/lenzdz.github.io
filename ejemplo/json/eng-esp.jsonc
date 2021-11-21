@@ -1,0 +1,19 @@
+[
+    // Palabras que comienzan con la letra A
+    {
+        "palabra": "apple",
+        "categoriaGramatical": "sustantivo",
+        "traduccion": "manzana"
+    },
+    // Palabras que comienzan con la letra B
+    {
+        "palabra": "baby",
+        "acepciones": [
+            {
+                "categoriaGramatical": "sustantivo",
+                "traducciones": ["bebé"]
+            }
+        ]
+        
+    }
+]

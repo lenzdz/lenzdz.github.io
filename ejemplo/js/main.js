@@ -1,8 +1,60 @@
 var request = new XMLHttpRequest();
 request.open("GET","https://lenzdz.github.io/ejemplo/json/eng-esp.json");
 request.onload = function() {
-    var dictionary = request.responseText;
-    console.log(dictionary[0]);
+    var dictionary = JSON.parse(request.responseText);
+
+    // Fill the dictionary list with words
+    init = function() {
+        for (var i = 0; i < dictionary.length; i++) {
+            document.getElementById("word_list").innerHTML += "<li onclick='show(" + i + ")'>" + dictionary[i].word + "</li>"
+        }  
+    }
+
+    // Call init function when page loads
+    init();
+
+    // Display word, definition and related words
+    show = function(i) {
+        document.getElementById("word_text").innerHTML = dictionary[i].word;
+        document.getElementById("definition").innerHTML = dictionary[i].definition;
+
+        var list = "";
+
+        for (var j = 0; j < dictionary[i].related.length; j++) {
+            list += "<li>" + dictionary[i].related[j] + "</li>";
+            document.getElementById("related").innerHTML = list;
+        }
+    }
+
+    // Show first word of the dictionary when page loads
+    show(0);
+
+    // Search funcionality
+    search = function() {
+        query = document.getElementById("search").value;
+
+        if (query == "") {
+            return;
+        }
+
+        found = -1; // initialize found to false
+
+        for (var i = 0; i < dictionary.length; i++) {
+            if (query == dictionary[i].word) {
+                found = i;
+                break;
+            } else {
+                document.getElementById("word_text").innerHTML = "Word not found";
+                document.getElementById("definition").innerHTML = "This word is not in our dictionary.";
+                document.getElementById("related").innerHTML = "No related words.";
+            }
+        }
+
+        if (found >= 0) {
+            show(found);
+        }
+
+    }
 }
 request.send();
 

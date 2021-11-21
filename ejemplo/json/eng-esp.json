@@ -15,6 +15,26 @@
         "related" : ["toy", "air", "string"]
     },
     {
+        "word": "love",
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "a feeling of strong or constant affection for a person.",
+                "translation": ["amor", "cariño"]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "attraction that includes sexual desire : the strong affection felt by people who have a romantic relationship.",
+                "translation": ["amor", "pasión"]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "to hold dear.",
+                "translation": ["amar", "querer"]
+            }
+        ]
+    },
+    {
         "word": "venom",
         "definition": "the poisonous liquid that some snakes, spiders, etc. produce when they bite or sting you",
         "related" : ["poison", "liquid", "snake"]

@@ -1,13 +1,13 @@
-fetch("https://lenzdz.github.io/ejemplo/json/eng-esp.JSON")
-    .then(response => response.json())
-    .then(data => console.log(data));
+// fetch("https://lenzdz.github.io/ejemplo/json/eng-esp.json")
+//     .then(response => response.json())
+//     .then(data => console.log(data));
 
-// var request = new XMLHttpRequest();
-// request.open("GET","https://lenzdz.github.io/ejemplo/json/eng-esp.JSON");
-// request.onload = function() {
-//     console.log(request.responseText);
-// }
-// request.send();
+var request = new XMLHttpRequest();
+request.open("GET","https://lenzdz.github.io/ejemplo/json/eng-esp.json");
+request.onload = function() {
+    console.log(request.responseText);
+}
+request.send();
 
 // var dictionary = [
 //     {

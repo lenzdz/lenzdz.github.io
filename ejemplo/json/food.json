@@ -1,0 +1,17 @@
+[
+    {
+        "word": "food",
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "the things that people and animals eat.",
+                "translation": ["comida", "alimento"]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "something that nourishes, sustains, or supplies.",
+                "translation": ["comida", "sustento"]
+            }
+        ]
+    }
+]

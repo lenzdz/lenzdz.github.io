@@ -107,7 +107,7 @@ body {
     height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .wrapper.active ul {
@@ -139,6 +139,21 @@ ul .word span {
     font-size: 12px;
     font-style: italic;
     color: var(--gray);
+}
+
+ul .content {
+    max-height: 215px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+ul .content::-webkit-scrollbar {
+    width: 7px;
+}
+
+ul .content::-webkit-scrollbar-thumb{
+    background-color: #C0C0C0;
+    border-radius: 10px;
 }
 
 .content li .details {

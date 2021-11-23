@@ -4,14 +4,13 @@ infoText = wrapper.querySelector(".info-text"),
 removeIcon = wrapper.querySelector(".search span");
 
 // Fetch API function
-function fetchAPI(word) {
+function fetchAPI(userWord) {
+    word = userWord.toLowerCase();
     wrapper.classList.remove("active")
     infoText.style.color = "#000";
     infoText.innerHTML = `Buscando traducciones para <span>"${word}".</span>`;
     let url = `https://lenzdz.github.io/ejemplo/json/${word}.json`;
     fetch(url)
-    // .then(res => res.json())
-    // .then(result => data(result, word));
     .then(res => {
         if (res.ok) {
           return res.json()
@@ -46,7 +45,6 @@ function fetchAPI(word) {
                 </li>
               `  
           }
-        //   document.querySelector(".word p").innerHTML = result[0].meaning
       })
       .catch(error => {
         wrapper.classList.remove("active")  

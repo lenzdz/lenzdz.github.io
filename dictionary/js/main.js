@@ -29,6 +29,15 @@ request.onload = function() {
     // Show first word of the dictionary when page loads
     show(0);
 
+    // Search with 'Enter' key
+    var input = document.getElementById("search");
+    input.addEventListener("keyup", function(event) {
+        if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById("search-btn").click();
+        }
+    });
+
     // Search funcionality
     search = function() {
         query = document.getElementById("search").value;

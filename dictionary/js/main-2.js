@@ -26,7 +26,9 @@ function fetchAPI(userWord) {
           // Add JSON info to HTML
 
           // Word
-          document.querySelector(".word p").innerHTML = result[0].word;
+          tempWord = result[0].word;
+          capWord = tempWord.charAt(0).toUpperCase() + tempWord.slice(1);
+          document.querySelector(".word p").innerHTML = capWord;
 
           // Number of meanings of word
           document.querySelector(".word span").innerHTML = `Se han encontrado ${result[0].meanings.length} acepciones.`;
@@ -37,7 +39,7 @@ function fetchAPI(userWord) {
               document.querySelector(".content").innerHTML += `
                 <li class="meaning">
                     <div class="details">
-                        <p>${word}</p>
+                        <p>` + capWord + `</p>
                         <span class="definition">${result[0].meanings[i].partOfSpeech}. ${result[0].meanings[i].definition}</span>
                         <br />
                         <span class="translation">${result[0].meanings[i].translation.join(", ")}</span>

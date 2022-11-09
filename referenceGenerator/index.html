@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Generador de referencias</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Generador de referencias</h1>
+        <p class="subtitle">¡Bienvenido al generador de referencias en formato Vancouver! Selecciona el tipo de documento que deseas citar y rellena el formulario con los datos solicitados. Luego, oprime el botón «Generar referencia».</p>
+
+        <form id="docTypeForm">
+            <input type="radio" id="abstract" name="docType" value="Abstract">
+            <label for="abstract">Abstract</label>
+            <input type="radio" id="article" name="docType" value="Artículo" checked>
+            <label for="article">Artículo</label>
+            <input type="radio" id="book" name="docType" value="Libro">
+            <label for="book">Libro</label>
+            <input type="radio" id="webPage" name="docType" value="Página Web">
+            <label for="webPage">Página Web</label>
+        </form>
+
+        <div id="articleDiv">
+            <p><b>Autor(es)</b><input type="checkbox">El documento tiene 7 autores o más</p>
+            <label for="sname1">Nombre</label>
+            <input type="text">
+            <label for="lname1">Apellido</label>
+            <input type="text">
+            <label for="sname2">Nombre</label>
+            <input type="text">
+            <label for="lname2">Apellido</label>
+            <input type="text">
+            <label for="sname3">Nombre</label>
+            <input type="text">
+            <label for="lname3">Apellido</label>
+            <input type="text"><br>
+            <label for="sname4">Nombre</label>
+            <input type="text">
+            <label for="lname4">Apellido</label>
+            <input type="text">
+            <label for="sname5">Nombre</label>
+            <input type="text">
+            <label for="lname5">Apellido</label>
+            <input type="text">
+            <label for="sname6">Nombre</label>
+            <input type="text">
+            <label for="lname6">Apellido</label>
+            <input type="text">
+        </div>
+
+        <div class="actionButtons">
+            <button class="generateButton">Generar referencia</button>
+            <button class="clearButton">Limpiar parámetros</button>
+        </div>
+    </div>
+</body>
+</html>

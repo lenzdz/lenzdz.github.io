@@ -9,7 +9,7 @@ function fetchAPI(userWord) {
     wrapper.classList.remove("active")
     infoText.style.color = "#000";
     infoText.innerHTML = `Buscando traducciones para <span>"${word}".</span>`;
-    let url = `https://lenzdz.github.io/ejemplo/json/${word}.json`;
+    let url = `https://lenzdz.github.io/dictionary/json/${word}.json`;
     fetch(url)
     .then(res => {
         if (res.ok) {

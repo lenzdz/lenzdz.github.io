@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafdff;
+}
+
+/* Barra de navegación, aka. menú */
+
+nav {
+	/* background-color: #000f63; */
+	box-shadow: 0px 1px 5px #a3a3a3;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+}
+
+.logo {
+	color: #a3a3a3;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.logo h4 {
+	font-weight: 600;
+}
+
+.logo h4 span {
+	font-weight: 600;
+	color: #000f63;
+}
+
+.nav-links {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	color: #a3a3a3;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: 600;
+	transition: 0.3s ease-in;
+}
+
+.nav-links a:hover {
+	color: #000f63;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	background-color: #a3a3a3;
+	margin: 5px;
+	width: 25px;
+	height: 3px;
+	transition: all 0.3s ease;
+}
+
+/* Cabecera */
+
+.header {
+	display: flex;
+	justify-content: center;
+}
+
+.header__flexbox-item {
+	height: 250px;
+	width: 270px;
+	border: #000f63;
+	margin: 4em 2em;
+}
+
+.cv-photo {
+	width: 100%;
+	height: auto;
+	border-radius: 50em;
+	border: 1em solid #FFF;
+	box-shadow: 0em 0em 0.8em 0.4em #dbdbdb;
+}
+
+.header__flexbox-item h2 {
+	font-weight: 700;
+	font-size: 3em;
+}
+
+.header__flexbox-item2 {
+	display: flex;
+	align-items: center;
+	width: 400px;
+}
+
+.header__flexbox-item2 .education {
+	color: #a3a3a3;
+}
+
+.description-text {
+	margin-bottom: 2em;
+}
+
+.downloadCV {
+	background-color: #fafdff;
+	border: 2px solid #000f63;
+	text-decoration: none;
+	padding: 0.4em 2em;
+	border-radius: 2em;
+	font-size: 1em;
+	transition: 0.3s ease-in;
+}
+
+.downloadCV:hover {
+	background-color: #000f63;
+	color: #fafdff;
+}
+
+/* Diseño responsive para móbiles - Barra de navegación */
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #fafdff;
+		box-shadow: -1px 3px 5px #a3a3a3;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in;
+	}
+
+	.nav-links li {
+		opacity: 0;
+	}
+
+	.burger {
+		display: block;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Diseño responsive para la cabecera */
+
+@media screen and (max-width: 768px) {
+	.header {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.header__flexbox-item1 {
+		width: 300px;
+		border: #000f63;
+		margin: 2em 2em 2em 2em;
+	}
+	
+	.header__flexbox-item2 {
+		width: 80vw;
+		border: #000f63;
+		margin: 2em 2em 2em 2em;
+	}
+
+	.cv-photo {
+		width: 100%;
+		height: auto;
+		align-content: center;
+		border-radius: 50em;
+		border: 1em solid #FFF;
+		box-shadow: 0em 0em 0.8em 0.4em #dbdbdb;
+	}
+}

@@ -132,7 +132,7 @@ nav {
 
 /* Diseño responsive para móbiles - Barra de navegación */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 	body {
 		overflow-x: hidden;
 	}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/estilos-2.css">
+
+    <title>Diccionaro Eng -Esp</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header>Journals</header>
+
+        <div class="search">
+            <input input="search" type="text" placeholder="Buscar una palabra" required>
+            <i class="fas fa-search"></i>
+            <span class="material-icons">close</span>
+        </div>
+
+        <p class="info-text">Escribe el nombre de una revista, o su abreviatura, y presiona la tecla 'Enter' para buscar información sobre ella.</p>
+
+        <ul>
+            
+            <li class="word" id="word">
+                <div class="abbreviation" id="abbreviation">
+                    <p></p>
+                    <span></span>
+                </div>
+            </li>
+
+            <!-- En el siguiente div tendrán que ir los Template Literals -->
+            <div class="content">
+                
+            </div>
+        </ul>
+
+    </div>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

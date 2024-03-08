@@ -1,0 +1,56 @@
+[
+    {
+        "titleLowCase": "european respiratory journal",
+        "abbreviationLowCase": "eur respir j",
+        "title": "European Respiratory Journal",
+        "abbreviation": "Eur Respir J",
+        "medium": "En línea",
+        "description": "",
+        "web": ""
+    },
+    {
+        "titleLowCase": "respirology",
+        "abbreviationLowCase": "respirology",
+        "title": "Respirology",
+        "abbreviation": "Respirology",
+        "medium": "Impreso y en línea",
+        "description": "",
+        "web": ""
+    },
+    {
+        "titleLowCase": "haematologica",
+        "abbreviationLowCase": "haematologica",
+        "title": "Haematologica",
+        "abbreviation": "Haematologica",
+        "medium": "En línea",
+        "description": "",
+        "web": ""
+    },
+    {
+        "titleLowCase": "advances in therapy",
+        "abbreviationLowCase": "adv ther",
+        "title": "Advances in Therapy",
+        "abbreviation": "Adv Ther",
+        "medium": "Impreso y en línea",
+        "description": "",
+        "web": ""
+    },
+    {
+        "titleLowCase": "the lancet",
+        "abbreviationLowCase": "the lancet",
+        "title": "the lancet",
+        "abbreviation": "the lancet",
+        "medium": "Impreso y en línea",
+        "description": "",
+        "web": ""
+    },
+    {
+        "titleLowCase": "applied microbiology and biotechnology",
+        "abbreviationLowCase": "appl microbiol biotechnol",
+        "title": "Applied Microbiology and Biotechnology",
+        "abbreviation": "Appl Microbiol Biotechnol",
+        "medium": "Impreso y en línea",
+        "description": "",
+        "web": ""
+    }
+]

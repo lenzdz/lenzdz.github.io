@@ -1,0 +1,52 @@
+[
+    // Revistas que comienzan con A
+    {
+        "titleLowCase": "advances in therapy",
+        "abbreviationLowCase": "adv ther",
+        "title": "Advances in Therapy",
+        "abbreviation": "Adv Ther",
+        "medium": "Impreso y en línea",
+        "description": "Revista médica internacional revisada por pares expertos, con un proceso de selección abierto y publicación rápida, que cubre la medicina clínica, especialmente en la investigación relacionada con productos farmacéuticos."
+    },
+    {
+        "titleLowCase": "applied microbiology and biotechnology",
+        "abbreviationLowCase": "appl microbiol biotechnol",
+        "title": "Applied Microbiology and Biotechnology",
+        "abbreviation": "Appl Microbiol Biotechnol",
+        "medium": "Impreso y en línea",
+        "description": "Revista quincenal revisada por pares expertos que publica artículos y mini-revisiones sobre productos, procesos y tecnologías nuevos y emergentes, enzimas y proteínas relevantes, genética aplicada y biotecnología molecular, genómica y proteómica, fisiología microbiana y celular aplicada y biotecnología medioambiental, entre otros."
+    },
+    {
+        "titleLowCase": "european respiratory journal",
+        "abbreviationLowCase": "eur respir j",
+        "title": "European Respiratory Journal",
+        "abbreviation": "Eur Respir J",
+        "medium": "En línea",
+        "description": "Revista de publicación semestral enfocada en artículos clínicos y de investigación que abordan diversos aspectos de la medicina respiratoria tanto en pacientes pediátricos como adultos, cubriendo campos como biología celular, epidemiología, inmunología, oncología, fisiopatología, diagnóstico por imagen y cirugía torácica. También se publican comentarios editoriales y revisiones."
+    },
+    {
+        "titleLowCase": "haematologica",
+        "abbreviationLowCase": "haematologica",
+        "title": "Haematologica",
+        "abbreviation": "Haematologica",
+        "medium": "En línea",
+        "description": "Revista médica mensual revisada por pares y de acceso abierto publicada por la Fundación Ferrata Storti. Cubre todos los temas relacionados con hematología experimental y clínica."
+    },
+    {
+        "titleLowCase": "respirology",
+        "abbreviationLowCase": "respirology",
+        "title": "Respirology",
+        "abbreviation": "Respirology",
+        "medium": "Impreso y en línea",
+        "description": "Publicación centrada en investigaciones, análisis críticos y perspectivas en diversas ramas de la medicina respiratoria y sus enfermedades asociadas. Los tópicos abordados abarcan el asma, bronquiectasias, enfermedad pulmonar obstructiva crónica, cáncer de pulmón, enfermedades pulmonares pediátricas, entre otros."
+    },
+    {
+        "titleLowCase": "the lancet",
+        "abbreviationLowCase": "lancet",
+        "title": "The Lancet",
+        "abbreviation": "Lancet",
+        "medium": "Impreso y en línea",
+        "description": "Publicación periódica de medicina general británica, revisada por pares expertos y publicada semanalmente por “The Lancet Publishing Group”. Es una de las revistas con mayor impacto en la actualidad."
+    }
+    
+]

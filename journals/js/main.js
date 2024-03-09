@@ -1,80 +1,125 @@
 var request = new XMLHttpRequest();
-request.open("GET", "https://lenzdz.github.io/dictionary/json/eng-esp.json");
+request.open("GET", "https://lenzdz.github.io/journals/json/journals.json");
 const wrapper = document.querySelector(".wrapper"),
     searchInput = wrapper.querySelector("input"),
     infoText = wrapper.querySelector(".info-text"),
     removeIcon = wrapper.querySelector(".search span");
 request.onload = function () {
-    var dictionary = JSON.parse(request.responseText);
-    console.log(dictionary);
+    var journalsDB = JSON.parse(request.responseText);
+    console.log(journalsDB);
 
     // Enter to search functionality
     searchInput.addEventListener("keyup", (e) => {
         if (e.key === "Enter" && e.target.value) {
-        console.log("Sirvió el Enter.");
-        search(e.target.value);
+            search(e.target.value);
         }
     });
 
     // Search funcionality
-    function search(word) {
-        console.log("Entré a la función de búsqueda.");
-        console.log(dictionary.length)
-        found = -1; // initialize found to false
+    function search(journal) {
+        journal = String(journal.toLowerCase()).trim();
+        matches = [];
 
         // Search by journal name
-        for (var i = 0; i < dictionary.length; i++) {
-            console.log("Vuelta " + i + ": la palabra en el arreglo es " + dictionary[i].word)
-            if (word == dictionary[i].titleLowCase) {
+        found = searchByTitle(journal);
+        console.log(found);
+
+        // Search by journal abbreviation, if haven't found something
+        found = found < 0 ? searchByAbbreviation(journal, "abbreviationLowCase") : found;
+        console.log(found);
+
+        if (found >= 0) {
+            matches.push(journalsDB[found]);
+        }
+
+        fuzzyMatches = searchFuzzyMatchesByTitle(journal);
+        console.log("Antes de unir matches con fuzzymatches");
+        matches = matches.concat(fuzzyMatches);
+        console.log(matches);
+
+        if (matches.length > 0) {
+            show(found, journal, matches);
+        } else {
+            wrapper.classList.remove("active");
+            infoText.innerHTML = `Lo sentimos, la revista "<strong>${journal}</strong>" no se encuentra en la base de datos.`;
+        }
+    }
+
+    function searchByTitle(journal) {
+        found = -1; // initialize found to false
+
+        for (var i = 0; i < journalsDB.length; i++) {
+            if (journal == journalsDB[i].titleLowCase) {
                 found = i;
-                console.log(found);
                 break;
             }
         }
 
-        // Search by journal abbreviation, if haven't found something
-        if (found < 0) {
-            for (var i = 0; i < dictionary.length; i++) {
-                if (word == dictionary[i].abbreviationLowCase) {
-                    found = i;
-                    console.log(found);
-                    break;
-                }
+        return found;
+    }
+
+    function searchByAbbreviation(journal) {
+        found = -1; // initialize found to false
+
+        for (var i = 0; i < journalsDB.length; i++) {
+            if (journal == journalsDB[i].abbreviationLowCase) {
+                found = i;
+                break;
             }
         }
 
-        if (found >= 0) {
-            show(found);
-        } else {
-            infoText.innerHTML = `Lo sentimos, la palabra "<strong>${word}</strong>" no se encuentra en nuestro diccionario.`;
-        }
+        return found;
     }
 
-    function show(index) {
+    function searchFuzzyMatchesByTitle(journal) {
+        fuzzyMatches = [];
+
+        for (var i = 0; i < journalsDB.length; i++) {
+             if (journalsDB[i].titleLowCase.includes(journal)){
+                fuzzyMatches.push(journalsDB[i]);
+             };
+        }
+        console.log("En for fuzzy");
+        console.log(fuzzyMatches);
+        return fuzzyMatches;
+    }
+
+    function show(index, journal, matches) {
         wrapper.classList.add("active");
 
         // Add JSON info to HTML
 
-        // Word
-        tempWord = dictionary[index].word;
-        capWord = tempWord.charAt(0).toUpperCase() + tempWord.slice(1);
-        document.querySelector(".word p").innerHTML = capWord;
+        // Searched journal, word or words
+        let title;
+        if (index >= 0) {
+            title = journalsDB[index].title;
+            document.querySelector(".word p").innerHTML = title;
+        } else {
+            title = journal;
+            document.querySelector(".word p").innerHTML = title;
+        }
 
-        // Number of meanings of word
-        document.querySelector(".word span").innerHTML = `Se ha encontrado ${dictionary[index].definition} resultado.`;
+        // Number of matches for journal, word or words
+        quantityStatement = matches.length == 1 ? `Se ha encontrado ${matches.length} resultado.` : 
+                                                `Se han encontrado ${matches.length} resultados.`;
+        document.querySelector(".word span").innerHTML = quantityStatement;
 
-        // Meanings of word: part of speech, definition and translation to Spanish
+        // Journal details
         document.querySelector(".content").innerHTML = "";
-        document.querySelector(".content").innerHTML += `
-                <li class="meaning">
-                    <div class="details">
-                        <p>` + capWord + `</p>
-                        <span class="definition">${dictionary[index].definition}. ${dictionary[index].definition}</span>
-                        <br />
-                        <span class="translation">${dictionary[index].related.join(", ")}</span>
-                    </div>
-                </li>
-            `
+        for (let i = 0; i < matches.length; i++) {
+            document.querySelector(".content").innerHTML += `
+                    <li class="item">
+                        <div class="details">
+                            <p>` + matches[i].title + `</p>
+                            <span class="abbreviation">${matches[i].abbreviation}. ${matches[i].medium}</span>
+                            <br />
+                            <span class="definition">${matches[i].description}</span>
+                            <br />
+                            
+                        </div>
+                    </li>
+                `
+        }
     }
 };
 
@@ -84,7 +129,7 @@ removeIcon.addEventListener("click", () => {
      searchInput.value = "";
      searchInput.focus();
      wrapper.classList.remove("active");
-     infoText.innerHTML = "Escribe una palabra en inglés y presiona la tecla 'Enter' para conocer sus acepciones y traducciones al español.";
+     infoText.innerHTML = "Escribe el nombre de una revista, o su abreviatura, y presiona la tecla 'Enter' para buscar información sobre ella.";
      infoText.style.color = "var(--gray)";
  });
 

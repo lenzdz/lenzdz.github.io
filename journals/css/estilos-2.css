@@ -3,7 +3,7 @@
 
 /* Colores */
 :root {
-    --color1: #C03FFF;
+    --color1: #3f7cff;
     --black: #000000;
     --gray: #999999;
     --white: #FFFFFF;
@@ -179,6 +179,6 @@ ul .content::-webkit-scrollbar-thumb{
     color: var(--gray);
 }
 
-.content li .details .translation {
+.content li .details .abbreviation {
     font-size: 14px;
 }

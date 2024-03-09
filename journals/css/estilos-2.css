@@ -182,3 +182,15 @@ ul .content::-webkit-scrollbar-thumb{
 .content li .details .abbreviation {
     font-size: 14px;
 }
+
+@media only screen and (min-width: 768px) {
+
+    .wrapper {
+        width: 50%;
+    }
+
+    .content li .details .definition {
+        font-size: 13px;
+    }
+
+}

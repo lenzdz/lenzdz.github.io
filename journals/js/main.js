@@ -111,7 +111,7 @@ request.onload = function () {
                     <li class="item">
                         <div class="details">
                             <p>` + matches[i].title + `</p>
-                            <span class="abbreviation">${matches[i].abbreviation}. ${matches[i].medium}</span>
+                            <span class="abbreviation">${matches[i].abbreviation} — ${matches[i].medium}</span>
                             <br />
                             <span class="definition">${matches[i].description}</span>
                             <br />

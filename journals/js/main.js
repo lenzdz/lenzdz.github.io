@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open("GET", "https://lenzdz.github.io/journals/json/journals.jsonc");
+request.open("GET", "https://lenzdz.github.io/journals/json/journals.json");
 const wrapper = document.querySelector(".wrapper"),
     searchInput = wrapper.querySelector("input"),
     infoText = wrapper.querySelector(".info-text"),

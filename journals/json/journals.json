@@ -5,7 +5,7 @@
         "title": "Actas Urológicas Españolas",
         "abbreviation": "Actas Urol Esp",
         "medium": "En línea",
-        "description": "Revista científica de alcance global centrada en las enfermedades del tracto urinario y en el trasplante de riñón. La divulgación impresa cesó en 2014."
+        "description": "Revista científica de alcance global centrada en las enfermedades del tracto urinario y en el trasplante de riñón. También abarca temáticas como urología oncológica, andrología, litiasis, endourología, urodinámica, entre otros. Maneja un esquema de revisión por pares doble ciego y se publican 10 ediciones anualmente. La divulgación impresa cesó en 2014."
     },
     {
         "titleLowCase": "advances in therapy",
@@ -14,6 +14,14 @@
         "abbreviation": "Adv Ther",
         "medium": "Impreso y en línea",
         "description": "Revista médica internacional revisada por pares expertos, con un proceso de selección abierto y publicación rápida, que cubre la medicina clínica, especialmente en la investigación relacionada con productos farmacéuticos."
+    },
+    {
+        "titleLowCase": "bju international",
+        "abbreviationLowCase": "bju int",
+        "title": "BJU International",
+        "abbreviation": "BJU Int",
+        "medium": "Impreso y en línea",
+        "description": "Publicación de artículos originales, revisiones, comentarios y comunicaciones de investigación sobre todos los aspectos de la urología, incluida la oncología urológica, la cirugía robótica y laparoscópica, el tracto urinario superior, la endourología, la urología funcional y la andrología."
     },
     {
         "titleLowCase": "applied microbiology and biotechnology",
@@ -62,6 +70,21 @@
         "abbreviation": "Lancet",
         "medium": "Impreso y en línea",
         "description": "Publicación periódica de medicina general británica, revisada por pares expertos y publicada semanalmente por “The Lancet Publishing Group”. Es una de las revistas con mayor impacto en la actualidad."
-    }
-    
+    },
+    {
+        "titleLowCase": "world journal of clinical urology",
+        "abbreviationLowCase": "world j clin urol",
+        "title": "World Journal of Clinical Urology",
+        "abbreviation": "World J Clin Urol",
+        "medium": "En línea",
+        "description": "Revista de acceso abierto enfocada principalmente en divulgar los resultados de investigaciones obtenidas en el campo de la urología y que abarcan una amplia gama de temas, como andrología, hiperplasia prostática benigna, diagnóstico por imagen, endoscopia, entre otros. "
+    } ,
+    {
+        "titleLowCase": "world journal of urology",
+        "abbreviationLowCase": "world j urol",
+        "title": "World Journal of Urology",
+        "abbreviation": "World J Urol",
+        "medium": "Impreso y en línea",
+        "description": "Publicación integral sobre los avances en los aspectos básicos y clínicos de la urología. Publica resultados esenciales de la investigación urológica con relevancia práctica y clínica."
+    }    
 ]

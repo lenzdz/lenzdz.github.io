@@ -183,6 +183,10 @@ ul .content::-webkit-scrollbar-thumb{
     font-size: 14px;
 }
 
+mark {
+    background-color: #ffdb0f;
+}
+
 @media only screen and (min-width: 768px) {
 
     .wrapper {

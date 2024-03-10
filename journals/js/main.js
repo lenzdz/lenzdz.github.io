@@ -5,12 +5,12 @@ const wrapper = document.querySelector(".wrapper"),
     infoText = wrapper.querySelector(".info-text"),
     removeIcon = wrapper.querySelector(".search span");
 request.onload = function () {
+    // Load JSON
     var journalsDB = JSON.parse(request.responseText);
-    console.log(journalsDB);
 
     // Enter to search functionality
     searchInput.addEventListener("keyup", (e) => {
-        if (e.key === "Enter" && e.target.value) {
+        if (e.key === "Enter" && e.target.value && e.target.value.length > 1) {
             search(e.target.value);
         }
     });
@@ -18,26 +18,29 @@ request.onload = function () {
     // Search funcionality
     function search(journal) {
         journal = String(journal.toLowerCase()).trim();
-        matches = [];
+        matches = new Set();
 
         // Search by journal name
         found = searchByTitle(journal);
-        console.log(found);
 
         // Search by journal abbreviation, if haven't found something
         found = found < 0 ? searchByAbbreviation(journal, "abbreviationLowCase") : found;
-        console.log(found);
 
+        // Add journal to Set if found
         if (found >= 0) {
-            matches.push(journalsDB[found]);
+            matches.add(journalsDB[found]);
         }
 
-        fuzzyMatches = searchFuzzyMatchesByTitle(journal);
-        console.log("Antes de unir matches con fuzzymatches");
-        matches = matches.concat(fuzzyMatches);
-        console.log(matches);
+        // Search fuzzy matches (useful for not exact searches)
+        fuzzyByTitle = fuzzySearchMatchesByTitle(journal);
+        fuzzyByAbbreviation = fuzzySearchMatchesByAbbreviation(journal);
+        fuzzyByDescription = fuzzySearchMarchesByDescription(journal);
 
-        if (matches.length > 0) {
+        // Merge all Sets to have just one entry per item found in the fuzzy searches
+        matches = new Set([...matches, ...fuzzyByTitle, ...fuzzyByAbbreviation, ...fuzzyByDescription]);
+
+        // If any of the searches was succesful, then show in screen results. Otherwise, show not found message
+        if (matches.size > 0) {
             show(found, journal, matches);
         } else {
             wrapper.classList.remove("active");
@@ -71,16 +74,36 @@ request.onload = function () {
         return found;
     }
 
-    function searchFuzzyMatchesByTitle(journal) {
-        fuzzyMatches = [];
+    function fuzzySearchMatchesByTitle(journal) {
+        fuzzyMatches = new Set();;
 
         for (var i = 0; i < journalsDB.length; i++) {
              if (journalsDB[i].titleLowCase.includes(journal)){
-                fuzzyMatches.push(journalsDB[i]);
+                fuzzyMatches.add(journalsDB[i]);
              };
         }
-        console.log("En for fuzzy");
-        console.log(fuzzyMatches);
+        return fuzzyMatches;
+    }
+
+    function fuzzySearchMatchesByAbbreviation(journal) {
+        fuzzyMatches = new Set();
+
+        for (var i = 0; i < journalsDB.length; i++) {
+             if (journalsDB[i].abbreviationLowCase.includes(journal)){
+                fuzzyMatches.add(journalsDB[i]);
+             };
+        }
+        return fuzzyMatches;
+    }
+
+    function fuzzySearchMarchesByDescription(journal) {
+        fuzzyMatches = new Set();
+
+        for (var i = 0; i < journalsDB.length; i++) {
+             if (journalsDB[i].description.includes(journal)){
+                fuzzyMatches.add(journalsDB[i]);
+             };
+        }
         return fuzzyMatches;
     }
 
@@ -100,26 +123,46 @@ request.onload = function () {
         }
 
         // Number of matches for journal, word or words
-        quantityStatement = matches.length == 1 ? `Se ha encontrado ${matches.length} resultado.` : 
-                                                `Se han encontrado ${matches.length} resultados.`;
+        quantityStatement = matches.size == 1 ? `Se ha encontrado ${matches.size} resultado.` : 
+                                                `Se han encontrado ${matches.size} resultados.`;
         document.querySelector(".word span").innerHTML = quantityStatement;
 
         // Journal details
         document.querySelector(".content").innerHTML = "";
-        for (let i = 0; i < matches.length; i++) {
+        matches.forEach (function(element) {
+            title = element.title.replace(new RegExp(journal, "gi"), (match) => `<mark>${match}</mark>`);
+            abbreviation = element.abbreviation.replace(new RegExp(journal, "gi"), (match) => `<mark>${match}</mark>`);
+            description = element.description.replace(new RegExp(journal, "gi"), (match) => `<mark>${match}</mark>`);
             document.querySelector(".content").innerHTML += `
                     <li class="item">
                         <div class="details">
-                            <p>` + matches[i].title + `</p>
-                            <span class="abbreviation">${matches[i].abbreviation} — ${matches[i].medium}</span>
+                            <p>` + title + `</p>
+                            <span class="abbreviation">${abbreviation} — ${element.medium}</span>
                             <br />
-                            <span class="definition">${matches[i].description}</span>
+                            <span class="definition">${description}</span>
                             <br />
                             
                         </div>
                     </li>
                 `
         }
+
+        );
+        // for (let i = 0; i < matches.size; i++) {
+        //     title.replace(new RegExp(journal, "gi"), (match) => `<mark>${match}</mark>`);
+        //     document.querySelector(".content").innerHTML += `
+        //             <li class="item">
+        //                 <div class="details">
+        //                     <p>` + matches[i].title + `</p>
+        //                     <span class="abbreviation">${matches[i].abbreviation} — ${matches[i].medium}</span>
+        //                     <br />
+        //                     <span class="definition">${matches[i].description}</span>
+        //                     <br />
+                            
+        //                 </div>
+        //             </li>
+        //         `
+        // }
     }
 };
 

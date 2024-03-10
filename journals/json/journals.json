@@ -1,5 +1,13 @@
 [
     {
+        "titleLowCase": "actas urológicas españolas",
+        "abbreviationLowCase": "actas urol esp",
+        "title": "Actas Urológicas Españolas",
+        "abbreviation": "Actas Urol Esp",
+        "medium": "En línea",
+        "description": "Revista científica de alcance global centrada en las enfermedades del tracto urinario y en el trasplante de riñón. La divulgación impresa cesó en 2014."
+    },
+    {
         "titleLowCase": "advances in therapy",
         "abbreviationLowCase": "adv ther",
         "title": "Advances in Therapy",
@@ -21,7 +29,7 @@
         "title": "European Respiratory Journal",
         "abbreviation": "Eur Respir J",
         "medium": "En línea",
-        "description": "Revista de publicación semestral enfocada en artículos clínicos y de investigación que abordan diversos aspectos de la medicina respiratoria tanto en pacientes pediátricos como adultos, cubriendo campos como biología celular, epidemiología, inmunología, oncología, fisiopatología, diagnóstico por imagen y cirugía torácica. También se publican comentarios editoriales y revisiones."
+        "description": "Revista de publicación semestral enfocada en artículos clínicos y de investigación que abordan diversos aspectos de la medicina respiratoria tanto en pacientes pediátricos como adultos, cubriendo campos como biología celular, epidemiología, inmunología, oncología, fisiopatología, diagnóstico por imagen y cirugía torácica. También se publican comentarios editoriales y revisiones. La divulgación impresa cesó en 2020."
     },
     {
         "titleLowCase": "haematologica",
@@ -30,6 +38,14 @@
         "abbreviation": "Haematologica",
         "medium": "En línea",
         "description": "Revista médica mensual revisada por pares y de acceso abierto publicada por la Fundación Ferrata Storti. Cubre todos los temas relacionados con hematología experimental y clínica."
+    },
+    {
+        "titleLowCase": "int j colorectal dis",
+        "abbreviationLowCase": "international journal of colorectal disease",
+        "title": "International Journal of Colorectal Disease",
+        "abbreviation": "Int J Colorectal Dis",
+        "medium": "En línea",
+        "description": "Publicación centrada en la fisiología y fisiopatología de las enfermedades que afectan al tracto gastrointestinal. La divulgación impresa cesó en 2015."
     },
     {
         "titleLowCase": "respirology",

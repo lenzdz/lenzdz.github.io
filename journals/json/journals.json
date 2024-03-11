@@ -16,6 +16,14 @@
         "description": "Revista médica internacional revisada por pares expertos, con un proceso de selección abierto y publicación rápida, que cubre la medicina clínica, especialmente en la investigación relacionada con productos farmacéuticos."
     },
     {
+        "titleLowCase": "applied microbiology and biotechnology",
+        "abbreviationLowCase": "appl microbiol biotechnol",
+        "title": "Applied Microbiology and Biotechnology",
+        "abbreviation": "Appl Microbiol Biotechnol",
+        "medium": "Impreso y en línea",
+        "description": "Revista quincenal revisada por pares expertos que publica artículos y mini-revisiones sobre productos, procesos y tecnologías nuevos y emergentes, enzimas y proteínas relevantes, genética aplicada y biotecnología molecular, genómica y proteómica, fisiología microbiana y celular aplicada y biotecnología medioambiental, entre otros."
+    },
+    {
         "titleLowCase": "bju international",
         "abbreviationLowCase": "bju int",
         "title": "BJU International",
@@ -24,12 +32,12 @@
         "description": "Publicación de artículos originales, revisiones, comentarios y comunicaciones de investigación sobre todos los aspectos de la urología, incluida la oncología urológica, la cirugía robótica y laparoscópica, el tracto urinario superior, la endourología, la urología funcional y la andrología."
     },
     {
-        "titleLowCase": "applied microbiology and biotechnology",
-        "abbreviationLowCase": "appl microbiol biotechnol",
-        "title": "Applied Microbiology and Biotechnology",
-        "abbreviation": "Appl Microbiol Biotechnol",
+        "titleLowCase": "circulation research",
+        "abbreviationLowCase": "circ res",
+        "title": "Circulation Research",
+        "abbreviation": "Circ Res",
         "medium": "Impreso y en línea",
-        "description": "Revista quincenal revisada por pares expertos que publica artículos y mini-revisiones sobre productos, procesos y tecnologías nuevos y emergentes, enzimas y proteínas relevantes, genética aplicada y biotecnología molecular, genómica y proteómica, fisiología microbiana y celular aplicada y biotecnología medioambiental, entre otros."
+        "description": "Publicación quincenal de la American Heart Association (AHA) enfocada en la investigación de todos los ámbitos relativos al sistema cardiovascular. Incluye temas como arritmia, investigación clínica, epidemiología, genética, insuficiencia cardiaca, enfermedades cardiacas, hipertensión, ictus, enfermedades vasculares, entre otros."
     },
     {
         "titleLowCase": "european respiratory journal",
@@ -48,12 +56,28 @@
         "description": "Revista médica mensual revisada por pares y de acceso abierto publicada por la Fundación Ferrata Storti. Cubre todos los temas relacionados con hematología experimental y clínica."
     },
     {
-        "titleLowCase": "int j colorectal dis",
-        "abbreviationLowCase": "international journal of colorectal disease",
+        "titleLowCase": "international journal of colorectal disease",
+        "abbreviationLowCase": "int j colorectal dis",
         "title": "International Journal of Colorectal Disease",
         "abbreviation": "Int J Colorectal Dis",
         "medium": "En línea",
         "description": "Publicación centrada en la fisiología y fisiopatología de las enfermedades que afectan al tracto gastrointestinal. La divulgación impresa cesó en 2015."
+    },
+    {
+        "titleLowCase": "journal of rare diseases research & treatment",
+        "abbreviationLowCase": "j rare dis res treat",
+        "title": "Journal of Rare Diseases Research & Treatment",
+        "abbreviation": "J Rare Dis Res Treat",
+        "medium": "En línea",
+        "description": "Publicación de acceso abierto dedicada al avance de la investigación y el conocimiento en el campo de las enfermedades raras y enfermedades huérfanas. Las principales áreas que aborda la revista son investigación clínica, medicina genética, medicina genómica, investigación traslacional, epidemiología, apoyo a las enfermedades raras, entre otros."
+    },
+    {
+        "titleLowCase": "pediatric nephrology",
+        "abbreviationLowCase": "pediatr nephrol",
+        "title": "Pediatric Nephrology",
+        "abbreviation": "Pediatr Nephrol",
+        "medium": "Impreso y en línea",
+        "description": "Revista sobre investigación clínica relacionada con enfermedades agudas y crónicas que afectan la función renal, la presión arterial y los trastornos de líquidos y electrolitos en niños. También se abarcan temas como enfermedades renales pediátricas, hipertensión, hemodiálisis, diálisis peritoneal, trastornos metabólicos, enfermedades genéticas, entre otros."
     },
     {
         "titleLowCase": "respirology",
@@ -79,6 +103,14 @@
         "medium": "En línea",
         "description": "Revista de acceso abierto enfocada principalmente en divulgar los resultados de investigaciones obtenidas en el campo de la urología y que abarcan una amplia gama de temas, como andrología, hiperplasia prostática benigna, diagnóstico por imagen, endoscopia, entre otros. "
     } ,
+    {
+        "titleLowCase": "world journal of nephrology and urology",
+        "abbreviationLowCase": "world j nephrol urol",
+        "title": "World Journal of Neprhology and Urology",
+        "abbreviation": "World J Nephrol Urol",
+        "medium": "Impreso y en línea",
+        "description": "Revista internacional publicada trimestralmente especializada en la investigación básica y la práctica clínica en el ámbito de la nefrología y la urología. Incluye campos como medicina interna, intervención quirúrgica y nefrología y urología traslacionales."
+    },
     {
         "titleLowCase": "world journal of urology",
         "abbreviationLowCase": "world j urol",

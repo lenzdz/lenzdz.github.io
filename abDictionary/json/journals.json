@@ -1,0 +1,14 @@
+[
+    {
+        "term": "cardiovascular",
+        "abbreviation": "CV",
+        "termLang": "eng esp",
+        "description": "Revista"
+    },
+    {
+        "term": "enfermedad cardiovascular aterosclerótica",
+        "abbreviation": "ECVA",
+        "termLang": "esp",
+        "description": "Revista"
+    }    
+]

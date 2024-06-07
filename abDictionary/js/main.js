@@ -53,7 +53,7 @@ request.onload = function () {
         found = -1; // initialize found to false
 
         for (var i = 0; i < abDictionary.length; i++) {
-            if (searchedWord == abDictionary[i].term) {
+            if (searchedWord == abDictionary[i].term || searchedWord == abDictionary[i].termEng) {
                 found = i;
                 break;
             }
@@ -66,7 +66,7 @@ request.onload = function () {
         found = -1; // initialize found to false
 
         for (var i = 0; i < abDictionary.length; i++) {
-            if (searchedWord == abDictionary[i].abbLowerCase) {
+            if (searchedWord == abDictionary[i].abbLowerCase || searchedWord == abDictionary[i].abbLowerCase) {
                 found = i;
                 break;
             }
@@ -79,7 +79,7 @@ request.onload = function () {
         fuzzyMatches = new Set();;
 
         for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].term.includes(searchedWord)){
+             if (abDictionary[i].term.includes(searchedWord) || abDictionary[i].termEng.includes(searchedWord)){
                 fuzzyMatches.add(abDictionary[i]);
              };
         }
@@ -90,7 +90,7 @@ request.onload = function () {
         fuzzyMatches = new Set();
 
         for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].abbLowerCase.includes(searchedWord)){
+             if (abDictionary[i].abbLowerCase.includes(searchedWord) || abDictionary[i].abbLowerCaseEng.includes(searchedWord)){
                 fuzzyMatches.add(abDictionary[i]);
              };
         }
@@ -142,7 +142,7 @@ request.onload = function () {
                     <li class="item">
                         <div class="details">
                             <p>` + abbreviation + ` — ` + term + `</p>
-                            <span class="abbreviation">${abbreviation} — ${element.termLang}</span>
+                            <span class="abbreviation"><i>${element.abbreviationEng}, ${element.termEng}</i></span>
                             <br />
                             <span class="definition">${description}</span>
                             <br />

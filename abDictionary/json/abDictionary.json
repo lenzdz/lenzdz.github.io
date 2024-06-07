@@ -15,6 +15,15 @@
         "termEng": "Atherosclerotic Cardiovascular Disease",
         "abbLowerCaseEng": "ascvd",
         "abbreviationEng": "ASCVD",
-        "description": "Tipo de cardiopatía causada por niveles constantemente elevados de colesterol malo (LDL-C) en la sangre que provocan la acumulación de placa en las paredes de las arterias."
-    }    
+        "description": "Tipo de cardiopatía causada por niveles constantemente elevados de colesterol malo (c-LDL) en la sangre que provocan la acumulación de placa en las paredes de las arterias."
+    },
+    {
+        "term": "cáncer de mama",
+        "abbLowerCase": "ca cam",
+        "abbreviation": "CA, CaM",
+        "termEng": "Breast Cancer",
+        "abbLowerCaseEng": "bc",
+        "abbreviationEng": "BC",
+        "description": "Cáncer que comienza como un crecimiento de células anormales en el tejido mamario. Puede empezar en una o en las dos mamas."
+    }
 ]

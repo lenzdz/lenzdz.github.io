@@ -17,7 +17,6 @@ request.onload = function () {
 
     // Search funcionality
     function search(searchedWord) {
-        console.log(searchedWord);
         searchedWord = String(searchedWord.toLowerCase()).trim();
         matches = new Set();
 
@@ -137,12 +136,14 @@ request.onload = function () {
             // Highlight search in found element
             term = term.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             abbreviation = element.abbreviation.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            termEng = element.termEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            abbreviationEng = element.abbreviationEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             description = element.description.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             document.querySelector(".content").innerHTML += `
                     <li class="item">
                         <div class="details">
                             <p>` + abbreviation + ` — ` + term + `</p>
-                            <span class="abbreviation"><i>${element.abbreviationEng}, ${element.termEng}</i></span>
+                            <span class="abbreviation">${abbreviationEng} — ${termEng}</span>
                             <br />
                             <span class="definition">${description}</span>
                             <br />

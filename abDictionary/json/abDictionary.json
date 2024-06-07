@@ -1,14 +1,16 @@
 [
     {
         "term": "cardiovascular",
+        "abbLowerCase": "cv",
         "abbreviation": "CV",
-        "termLang": "eng esp",
+        "termLang": "Español e inglés",
         "description": "Revista"
     },
     {
         "term": "enfermedad cardiovascular aterosclerótica",
+        "abbLowerCase": "ecva",
         "abbreviation": "ECVA",
-        "termLang": "esp",
-        "description": "Revista"
+        "termLang": "Español",
+        "description": "Tipo de cardiopatía causada por niveles constantemente elevados de colesterol malo (LDL-C) en la sangre que provocan la acumulación de placa en las paredes de las arterias. La enfermedad cardiovascular aterosclerótica se asocia con la sigla ECVA en español. "
     }    
 ]

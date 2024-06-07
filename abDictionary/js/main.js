@@ -17,6 +17,7 @@ request.onload = function () {
 
     // Search funcionality
     function search(searchedWord) {
+        console.log(searchedWord);
         searchedWord = String(searchedWord.toLowerCase()).trim();
         matches = new Set();
 
@@ -65,7 +66,7 @@ request.onload = function () {
         found = -1; // initialize found to false
 
         for (var i = 0; i < abDictionary.length; i++) {
-            if (searchedWord == abDictionary[i].abbreviation) {
+            if (searchedWord == abDictionary[i].abbLowerCase) {
                 found = i;
                 break;
             }
@@ -89,7 +90,7 @@ request.onload = function () {
         fuzzyMatches = new Set();
 
         for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].abbreviation.includes(searchedWord)){
+             if (abDictionary[i].abbLowerCase.includes(searchedWord)){
                 fuzzyMatches.add(abDictionary[i]);
              };
         }
@@ -131,13 +132,16 @@ request.onload = function () {
         // searchedWord details
         document.querySelector(".content").innerHTML = "";
         matches.forEach (function(element) {
-            term = element.term.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            // Term's first letter will be upper case
+            term = element.term.charAt(0).toUpperCase() + element.term.slice(1);
+            // Highlight search in found element
+            term = term.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             abbreviation = element.abbreviation.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             description = element.description.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             document.querySelector(".content").innerHTML += `
                     <li class="item">
                         <div class="details">
-                            <p>` + term + `(` + abbreviation `)</p>
+                            <p>` + abbreviation + ` — ` + term + `</p>
                             <span class="abbreviation">${abbreviation} — ${element.termLang}</span>
                             <br />
                             <span class="definition">${description}</span>

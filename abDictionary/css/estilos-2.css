@@ -174,7 +174,7 @@ ul .content::-webkit-scrollbar-thumb{
     color: var(--gray);
 }
 
-.content li .details .definition {
+.content li .details .use {
     font-size: 10px;
     color: var(--gray);
 }
@@ -193,7 +193,7 @@ mark {
         width: 50%;
     }
 
-    .content li .details .definition {
+    .content li .details .use {
         font-size: 13px;
     }
 

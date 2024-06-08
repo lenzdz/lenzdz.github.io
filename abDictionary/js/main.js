@@ -34,10 +34,10 @@ request.onload = function () {
         // Search fuzzy matches (useful for not exact searches)
         fuzzyByTerm = fuzzySearchMatchesByTerm(searchedWord);
         fuzzyByAbbreviation = fuzzySearchMatchesByAbbreviation(searchedWord);
-        fuzzyByDescription = fuzzySearchMarchesByDescription(searchedWord);
+        // fuzzyByDescription = fuzzySearchMarchesByDescription(searchedWord);
 
         // Merge all Sets to have just one entry per item found in the fuzzy searches
-        matches = new Set([...matches, ...fuzzyByTerm, ...fuzzyByAbbreviation, ...fuzzyByDescription]);
+        matches = new Set([...matches, ...fuzzyByTerm, ...fuzzyByAbbreviation]);
 
         // If any of the searches was succesful, then show in screen results. Otherwise, show not found message
         if (matches.size > 0) {
@@ -65,7 +65,7 @@ request.onload = function () {
         found = -1; // initialize found to false
 
         for (var i = 0; i < abDictionary.length; i++) {
-            if (searchedWord == abDictionary[i].abbLowerCase || searchedWord == abDictionary[i].abbLowerCase) {
+            if (searchedWord == abDictionary[i].abbLowerCase || searchedWord == abDictionary[i].abbLowerCaseEng) {
                 found = i;
                 break;
             }
@@ -96,32 +96,23 @@ request.onload = function () {
         return fuzzyMatches;
     }
 
-    function fuzzySearchMarchesByDescription(searchedWord) {
-        fuzzyMatches = new Set();
+    // function fuzzySearchMarchesByDescription(searchedWord) {
+    //     fuzzyMatches = new Set();
 
-        for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].description.includes(searchedWord)){
-                fuzzyMatches.add(abDictionary[i]);
-             };
-        }
-        return fuzzyMatches;
-    }
+    //     for (var i = 0; i < abDictionary.length; i++) {
+    //          if (abDictionary[i].description.includes(searchedWord)){
+    //             fuzzyMatches.add(abDictionary[i]);
+    //          };
+    //     }
+    //     return fuzzyMatches;
+    // }
 
     function show(index, searchedWord, matches) {
         wrapper.classList.add("active");
 
         // Add JSON info to HTML
 
-        // Searched searchedWord, word or words
-        let term;
-        // If there was an exact match
-        if (index >= 0) {
-            term = abDictionary[index].term;
-            document.querySelector(".word p").innerHTML = term;
-        } else {
-            term = searchedWord;
-            document.querySelector(".word p").innerHTML = term;
-        }
+        document.querySelector(".word p").innerHTML = searchedWord;
 
         // Number of matches for searchedWord, word or words
         quantityStatement = matches.size == 1 ? `Se ha encontrado ${matches.size} resultado.` : 
@@ -131,21 +122,30 @@ request.onload = function () {
         // searchedWord details
         document.querySelector(".content").innerHTML = "";
         matches.forEach (function(element) {
+            abbreviation = element.abbreviation.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            use = element.use;
+            language = element.language;
+
+            let meanings;
+            element.meanings.forEach (function(e) {
+                console.log(e);
+            })
+
             // Term's first letter will be upper case
             term = element.term.charAt(0).toUpperCase() + element.term.slice(1);
             // Highlight search in found element
             term = term.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
-            abbreviation = element.abbreviation.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            
             termEng = element.termEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             abbreviationEng = element.abbreviationEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
-            description = element.description.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            
             document.querySelector(".content").innerHTML += `
                     <li class="item">
                         <div class="details">
-                            <p>` + abbreviation + ` — ` + term + `</p>
-                            <span class="abbreviation">${abbreviationEng} — ${termEng}</span>
+                            <p>` + abbreviation + `</p>
+                            <span class="use">Utilizada como ${use} en ${language}</span>
                             <br />
-                            <span class="definition">${description}</span>
+                            <span class="abbreviation">${abbreviationEng} — ${termEng}</span>
                             <br />
                             
                         </div>

@@ -1,29 +1,48 @@
 [
     {
-        "term": "cardiovascular",
         "abbLowerCase": "cv",
         "abbreviation": "CV",
-        "termEng": "Cardiovascular",
-        "abbLowerCaseEng": "cv",
-        "abbreviationEng": "CV",
-        "description": "Revista"
+        "use": "sigla y abreviatura",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "ing. y esp.", "meaning": "cardiovascular"}
+        ]
+    },   
+    {
+        "abbLowerCase": "ca",
+        "abbreviation": "CA",
+        "use": "sigla y abreviatura",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp.", "meaning": "Cáncer", "langTrad": "eng.", "meaningTrad": "Cancer", "abbreviationTrad": "CA"},
+            {"lang": "eng.", "meaning": "Cardiac arrest", "langTrad": "esp.", "meaningTrad": "Paro cardíaco", "abbreviationTrad": "PC"}
+        ]
     },
     {
-        "term": "enfermedad cardiovascular aterosclerótica",
+        "abbLowerCase": "cam",
+        "abbreviation": "CaM",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp.", "meaning": "Cáncer de mama", "langTrad": "eng.", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cm",
+        "abbreviation": "CM",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp.", "meaning": "Cáncer de mama", "langTrad": "eng.", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
+        ]
+    },
+    {
         "abbLowerCase": "ecva",
         "abbreviation": "ECVA",
-        "termEng": "Atherosclerotic Cardiovascular Disease",
-        "abbLowerCaseEng": "ascvd",
-        "abbreviationEng": "ASCVD",
-        "description": "Tipo de cardiopatía causada por niveles constantemente elevados de colesterol malo (c-LDL) en la sangre que provocan la acumulación de placa en las paredes de las arterias."
-    },
-    {
-        "term": "cáncer de mama",
-        "abbLowerCase": "ca cam",
-        "abbreviation": "CA, CaM",
-        "termEng": "Breast Cancer",
-        "abbLowerCaseEng": "bc",
-        "abbreviationEng": "BC",
-        "description": "Cáncer que comienza como un crecimiento de células anormales en el tejido mamario. Puede empezar en una o en las dos mamas."
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp.", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng.", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"}
+        ]
     }
 ]

@@ -1,21 +1,12 @@
 [
     {
-        "abbLowerCase": "cv",
-        "abbreviation": "CV",
-        "use": "sigla y abreviatura",
-        "language": "español e inglés",
-        "meanings": [
-            {"lang": "ing. y esp.", "meaning": "cardiovascular"}
-        ]
-    },   
-    {
         "abbLowerCase": "ca",
         "abbreviation": "CA",
         "use": "sigla y abreviatura",
         "language": "español e inglés",
         "meanings": [
-            {"lang": "esp.", "meaning": "Cáncer", "langTrad": "eng.", "meaningTrad": "Cancer", "abbreviationTrad": "CA"},
-            {"lang": "eng.", "meaning": "Cardiac arrest", "langTrad": "esp.", "meaningTrad": "Paro cardíaco", "abbreviationTrad": "PC"}
+            {"lang": "esp", "meaning": "Cáncer", "langTrad": "eng", "meaningTrad": "Cancer", "abbreviationTrad": "CA"},
+            {"lang": "eng", "meaning": "Cardiac arrest", "langTrad": "esp", "meaningTrad": "Paro cardíaco", "abbreviationTrad": "PC"}
         ]
     },
     {
@@ -24,7 +15,7 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp.", "meaning": "Cáncer de mama", "langTrad": "eng.", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
+            {"lang": "esp", "meaning": "Cáncer de mama", "langTrad": "eng", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
         ]
     },
     {
@@ -33,7 +24,16 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp.", "meaning": "Cáncer de mama", "langTrad": "eng.", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
+            {"lang": "esp", "meaning": "Cáncer de mama", "langTrad": "eng", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cv",
+        "abbreviation": "CV",
+        "use": "sigla y abreviatura",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Cardiovascular", "langTrad": "eng", "meaningTrad": "Cardiovascular", "abbreviationTrad": "CV"}
         ]
     },
     {
@@ -42,7 +42,7 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp.", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng.", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"}
+            {"lang": "esp", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"}
         ]
     }
 ]

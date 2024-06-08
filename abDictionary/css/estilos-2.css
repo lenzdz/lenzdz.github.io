@@ -179,7 +179,7 @@ ul .content::-webkit-scrollbar-thumb{
     color: var(--gray);
 }
 
-.content li .details .abbreviation {
+.content li .details .meanings {
     font-size: 14px;
 }
 

@@ -18,6 +18,7 @@ request.onload = function () {
     // Search funcionality
     function search(searchedWord) {
         searchedWord = String(searchedWord.toLowerCase()).trim();
+        console.log(searchedWord);
         matches = new Set();
 
         // Search by searchedWord name
@@ -32,12 +33,12 @@ request.onload = function () {
         }
 
         // Search fuzzy matches (useful for not exact searches)
-        fuzzyByTerm = fuzzySearchMatchesByTerm(searchedWord);
+        //fuzzyByTerm = fuzzySearchMatchesByTerm(searchedWord);
         fuzzyByAbbreviation = fuzzySearchMatchesByAbbreviation(searchedWord);
         // fuzzyByDescription = fuzzySearchMarchesByDescription(searchedWord);
 
         // Merge all Sets to have just one entry per item found in the fuzzy searches
-        matches = new Set([...matches, ...fuzzyByTerm, ...fuzzyByAbbreviation]);
+        matches = new Set([...matches, ...fuzzyByAbbreviation]);
 
         // If any of the searches was succesful, then show in screen results. Otherwise, show not found message
         if (matches.size > 0) {
@@ -74,22 +75,22 @@ request.onload = function () {
         return found;
     }
 
-    function fuzzySearchMatchesByTerm(searchedWord) {
-        fuzzyMatches = new Set();;
+    // function fuzzySearchMatchesByTerm(searchedWord) {
+    //     fuzzyMatches = new Set();;
 
-        for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].term.includes(searchedWord) || abDictionary[i].termEng.includes(searchedWord)){
-                fuzzyMatches.add(abDictionary[i]);
-             };
-        }
-        return fuzzyMatches;
-    }
+    //     for (var i = 0; i < abDictionary.length; i++) {
+    //          if (abDictionary[i].term.includes(searchedWord) || abDictionary[i].termEng.includes(searchedWord)){
+    //             fuzzyMatches.add(abDictionary[i]);
+    //          };
+    //     }
+    //     return fuzzyMatches;
+    // }
 
     function fuzzySearchMatchesByAbbreviation(searchedWord) {
         fuzzyMatches = new Set();
 
         for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].abbLowerCase.includes(searchedWord) || abDictionary[i].abbLowerCaseEng.includes(searchedWord)){
+             if (abDictionary[i].abbLowerCase.includes(searchedWord)){
                 fuzzyMatches.add(abDictionary[i]);
              };
         }
@@ -127,25 +128,32 @@ request.onload = function () {
             language = element.language;
 
             let meanings;
-            element.meanings.forEach (function(e) {
-                console.log(e);
+            element.meanings.forEach (function(definition) {
+                meanings += `
+                <li>
+                    ${definition.lang}. ${definition.meaning}.
+                    <br />
+                    ${definition.langTrad}. ${definition.meaningTrad} (${definition.abbreviationTrad}).
+                </li>`;
             })
 
             // Term's first letter will be upper case
-            term = element.term.charAt(0).toUpperCase() + element.term.slice(1);
+            //term = element.term.charAt(0).toUpperCase() + element.term.slice(1);
             // Highlight search in found element
-            term = term.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            //term = term.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             
-            termEng = element.termEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
-            abbreviationEng = element.abbreviationEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            //termEng = element.termEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            //abbreviationEng = element.abbreviationEng.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
             
             document.querySelector(".content").innerHTML += `
                     <li class="item">
                         <div class="details">
                             <p>` + abbreviation + `</p>
-                            <span class="use">Utilizada como ${use} en ${language}</span>
+                            <span class="use">Utilizada como ${use} en ${language}.</span>
                             <br />
-                            <span class="abbreviation">${abbreviationEng} — ${termEng}</span>
+                            <ol class="meanings">
+                            ${meanings}
+                            </ol>
                             <br />
                             
                         </div>

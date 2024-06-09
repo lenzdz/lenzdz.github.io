@@ -111,7 +111,7 @@ body {
 }
 
 .wrapper.active ul {
-    height: 303px;
+    height: auto;
     opacity: 1;
 }
 

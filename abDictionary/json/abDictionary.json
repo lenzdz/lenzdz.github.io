@@ -1,5 +1,14 @@
 [
     {
+        "abbLowerCase": "acd",
+        "abbreviation": "ACD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Atherosclerotic Cerebrovascular Disease", "langTrad": "esp", "meaningTrad": "Enfermedad cerebrovascular aterosclerótica", "abbreviationTrad": "ECVA"}
+        ]
+    },,
+    {
         "abbLowerCase": "ascvd",
         "abbreviation": "ASCVD",
         "use": "sigla",
@@ -60,7 +69,8 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"}
+            {"lang": "esp", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"},
+            {"lang": "esp", "meaning": "Enfermedad cerebrovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cerebrovascular Disease", "abbreviationTrad": "ACD"}
         ]
     },
     {

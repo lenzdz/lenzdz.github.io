@@ -115,13 +115,18 @@ body {
     opacity: 1;
 }
 
-.wrapper ul li {
+.wrapper ul li.word {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 14px;
-    padding-bottom: 17px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+}
+
+.wrapper ul li.item {
+    /* margin-bottom: 14px; */
+    padding-bottom: 16px;
 }
 
 .wrapper ul li:last-child {
@@ -181,6 +186,8 @@ ul .content::-webkit-scrollbar-thumb{
 
 .content li .details .meanings {
     font-size: 14px;
+    padding-left: 32px;
+    padding-bottom: 10px;
 }
 
 mark {

@@ -1,5 +1,14 @@
 [
     {
+        "abbLowerCase": "ascvd",
+        "abbreviation": "ASCVD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Atherosclerotic Cardiovascular Disease", "langTrad": "esp", "meaningTrad": "Enfermedad cardiovascular aterosclerótica", "abbreviationTrad": "ECVA"}
+        ]
+    },
+    {
         "abbLowerCase": "ca",
         "abbreviation": "CA",
         "use": "sigla y abreviatura",
@@ -28,6 +37,15 @@
         ]
     },
     {
+        "abbLowerCase": "ct",
+        "abbreviation": "CT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Computed tomography, computerized tomography", "langTrad": "esp", "meaningTrad": "Tomografía computarizada", "abbreviationTrad": "TC"}
+        ]
+    },
+    {
         "abbLowerCase": "cv",
         "abbreviation": "CV",
         "use": "sigla y abreviatura",
@@ -43,6 +61,69 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"}
+        ]
+    },
+    {
+        "abbLowerCase": "irm",
+        "abbreviation": "IRM",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Imagen por resonancia magnética", "langTrad": "eng", "meaningTrad": "Magnetic Resonance Imaging", "abbreviationTrad": "MRI"}
+        ]
+    },
+    {
+        "abbLowerCase": "mri",
+        "abbreviation": "MRI",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Magnetic Resonance Imaging", "langTrad": "esp", "meaningTrad": "Imagen por resonancia magnética", "abbreviationTrad": "IRM"}
+        ]
+    },
+    {
+        "abbLowerCase": "pet",
+        "abbreviation": "PET",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Positron emission tomography", "langTrad": "esp", "meaningTrad": "Tomografía por emisión de positrones", "abbreviationTrad": "TEP"}
+        ]
+    },
+    {
+        "abbLowerCase": "pet-ct",
+        "abbreviation": "PET-CT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Positron emission tomography and computed tomography", "langTrad": "esp", "meaningTrad": "Tomografía por emisión de positrones con tomografía computarizada", "abbreviationTrad": "TEP"}
+        ]
+    },
+    {
+        "abbLowerCase": "tc",
+        "abbreviation": "TC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tomografía computarizada", "langTrad": "eng", "meaningTrad": "Computed tomography, computerized tomography", "abbreviationTrad": "CT"}
+        ]
+    },
+    {
+        "abbLowerCase": "tep",
+        "abbreviation": "TEP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tomografía por emisión de positrones", "langTrad": "eng", "meaningTrad": "Positron emission tomography", "abbreviationTrad": "PET"}
+        ]
+    },
+    {
+        "abbLowerCase": "tep-tc",
+        "abbreviation": "TEP-TC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tomografía por emisión de positrones con tomografía computarizada", "langTrad": "eng", "meaningTrad": "Positron emission tomography and computed tomography", "abbreviationTrad": "PET-CT"}
         ]
     }
 ]

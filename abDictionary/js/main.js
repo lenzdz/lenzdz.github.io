@@ -21,45 +21,27 @@ request.onload = function () {
         console.log(searchedWord);
         matches = new Set();
 
-        // Search by searchedWord name
-        found = searchByTerm(searchedWord);
+        // Search abbreviation by searched word
+        found = searchByAbbreviation(searchedWord);
 
-        // Search by searchedWord abbreviation, if haven't found something
-        found = found < 0 ? searchByAbbreviation(searchedWord) : found;
-
-        // Add searchedWord to Set if found
+        // Add searched word object to Set, if found
         if (found >= 0) {
             matches.add(abDictionary[found]);
         }
 
         // Search fuzzy matches (useful for not exact searches)
-        //fuzzyByTerm = fuzzySearchMatchesByTerm(searchedWord);
         fuzzyByAbbreviation = fuzzySearchMatchesByAbbreviation(searchedWord);
-        // fuzzyByDescription = fuzzySearchMarchesByDescription(searchedWord);
 
         // Merge all Sets to have just one entry per item found in the fuzzy searches
         matches = new Set([...matches, ...fuzzyByAbbreviation]);
 
         // If any of the searches was succesful, then show in screen results. Otherwise, show not found message
         if (matches.size > 0) {
-            show(found, searchedWord, matches);
+            show(searchedWord, matches);
         } else {
             wrapper.classList.remove("active");
             infoText.innerHTML = `Lo sentimos, el término o abreviatura "<strong>${searchedWord}</strong>" no se encuentra en la base de datos.`;
         }
-    }
-
-    function searchByTerm(searchedWord) {
-        found = -1; // initialize found to false
-
-        for (var i = 0; i < abDictionary.length; i++) {
-            if (searchedWord == abDictionary[i].term || searchedWord == abDictionary[i].termEng) {
-                found = i;
-                break;
-            }
-        }
-
-        return found;
     }
 
     function searchByAbbreviation(searchedWord) {
@@ -97,18 +79,7 @@ request.onload = function () {
         return fuzzyMatches;
     }
 
-    // function fuzzySearchMarchesByDescription(searchedWord) {
-    //     fuzzyMatches = new Set();
-
-    //     for (var i = 0; i < abDictionary.length; i++) {
-    //          if (abDictionary[i].description.includes(searchedWord)){
-    //             fuzzyMatches.add(abDictionary[i]);
-    //          };
-    //     }
-    //     return fuzzyMatches;
-    // }
-
-    function show(index, searchedWord, matches) {
+    function show(searchedWord, matches) {
         wrapper.classList.add("active");
 
         // Add JSON info to HTML
@@ -127,13 +98,13 @@ request.onload = function () {
             use = element.use;
             language = element.language;
 
-            let meanings;
+            let meanings = ``;
             element.meanings.forEach (function(definition) {
                 meanings += `
                 <li>
                     ${definition.lang}. ${definition.meaning}.
                     <br />
-                    ${definition.langTrad}. ${definition.meaningTrad} (${definition.abbreviationTrad}).
+                    <span style="color: var(--color1)">trad. ${definition.langTrad}. ${definition.meaningTrad} (${definition.abbreviationTrad}).</span>
                 </li>`;
             })
 
@@ -153,30 +124,12 @@ request.onload = function () {
                             <br />
                             <ol class="meanings">
                             ${meanings}
-                            </ol>
-                            <br />
-                            
+                            </ol>                            
                         </div>
                     </li>
                 `
         }
-
         );
-        // for (let i = 0; i < matches.size; i++) {
-        //     title.replace(new RegExp(journal, "gi"), (match) => `<mark>${match}</mark>`);
-        //     document.querySelector(".content").innerHTML += `
-        //             <li class="item">
-        //                 <div class="details">
-        //                     <p>` + matches[i].title + `</p>
-        //                     <span class="abbreviation">${matches[i].abbreviation} — ${matches[i].medium}</span>
-        //                     <br />
-        //                     <span class="definition">${matches[i].description}</span>
-        //                     <br />
-                            
-        //                 </div>
-        //             </li>
-        //         `
-        // }
     }
 };
 
@@ -189,95 +142,3 @@ removeIcon.addEventListener("click", () => {
      infoText.innerHTML = "Escribe el nombre de una revista, o su abreviatura, y presiona la tecla 'Enter' para buscar información sobre ella.";
      infoText.style.color = "var(--gray)";
  });
-
-// const wrapper = document.querySelector(".wrapper"),
-// searchInput = wrapper.querySelector("input");
-// infoText = wrapper.querySelector(".info-text"),
-// removeIcon = wrapper.querySelector(".search span");
-
-// // Fetch API function
-// function fetchAPI(userWord) {
-//     word = userWord.toLowerCase();
-//     wrapper.classList.remove("active");
-//     infoText.style.color = "#000";
-//     infoText.innerHTML = `Buscando traducciones para <span>"${word}".</span>`;
-
-//     if (userWord == "") {
-//       return;
-//     }
-
-//     found = -1; // initialize found to false
-
-//     for (var i = 0; i < dictionary.length; i++) {
-//       if (query == dictionary[i].word) {
-//           found = i;
-//           break;
-//       } else {
-//           document.getElementById("word_text").innerHTML = "Word not found";
-//           document.getElementById("definition").innerHTML = "This word is not in our dictionary.";
-//           document.getElementById("related").innerHTML = "No related words.";
-//       }
-//     }
-
-//     if (found >= 0) {
-//         show(found);
-//     }
-
-//     let url = `https://lenzdz.github.io/dictionary/json/${word}.json`;
-//     fetch(url)
-//     .then(res => {
-//         if (res.ok) {
-//           return res.json()
-//         } else if (res.status === 404) {
-//           return Promise.reject(`Lo sentimos, la palabra "<strong>${word}</strong>" no se encuentra en nuestro diccionario.`)
-//         } else {
-//           return Promise.reject(`Ocurrió un error inesperado. Prueba de nuevo más tarde.`)
-//         }
-//       })
-//       .then(result => {
-//           wrapper.classList.add("active");
-
-//           // Add JSON info to HTML
-
-//           // Word
-//           tempWord = result[0].word;
-//           capWord = tempWord.charAt(0).toUpperCase() + tempWord.slice(1);
-//           document.querySelector(".word p").innerHTML = capWord;
-
-//           // Number of meanings of word
-//           document.querySelector(".word span").innerHTML = `Se ha encontrado ${result[0].meanings.length} resultado.`;
-
-//           // Meanings of word: part of speech, definition and translation to Spanish
-//           document.querySelector(".content").innerHTML = ""
-//           for (let i = 0; i < result[0].meanings.length; i++) {
-//               document.querySelector(".content").innerHTML += `
-//                 <li class="meaning">
-//                     <div class="details">
-//                         <p>` + capWord + `</p>
-//                         <span class="definition">${result[0].meanings[i].partOfSpeech}. ${result[0].meanings[i].definition}</span>
-//                         <br />
-//                         <span class="translation">${result[0].meanings[i].translation.join(", ")}</span>
-//                     </div>
-//                 </li>
-//               `
-//           }
-//       })
-//       .catch(error => {
-//         wrapper.classList.remove("active")
-//         infoText.innerHTML = error
-//       });
-// }
-
-// searchInput.addEventListener("keyup", e =>{
-//     if (e.key === "Enter" && e.target.value) {
-//         fetchAPI(e.target.value);
-//     }
-// });
-
-// removeIcon.addEventListener("click", () => {
-//     searchInput.value = "";
-//     searchInput.focus();
-//     wrapper.classList.remove("active");
-//     infoText.innerHTML = "Escribe una palabra en inglés y presiona la tecla 'Enter' para conocer sus acepciones y traducciones al español.";
-//     infoText.style.color = "var(--gray)";
-// });

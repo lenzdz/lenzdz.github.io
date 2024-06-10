@@ -9,6 +9,15 @@
         ]
     },
     {
+        "abbLowerCase": "bc",
+        "abbreviation": "BC",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Breast cancer", "langTrad": "esp", "meaningTrad": "Cáncer de mama", "abbreviationTrad": "CM, CaM"}
+        ]
+    },
+    {
         "abbLowerCase": "ascvd",
         "abbreviation": "ASCVD",
         "use": "sigla",
@@ -57,10 +66,19 @@
     {
         "abbLowerCase": "cv",
         "abbreviation": "CV",
-        "use": "sigla y abreviatura",
+        "use": "abreviatura",
         "language": "español e inglés",
         "meanings": [
             {"lang": "esp", "meaning": "Cardiovascular", "langTrad": "eng", "meaningTrad": "Cardiovascular", "abbreviationTrad": "CV"}
+        ]
+    },
+    {
+        "abbLowerCase": "de",
+        "abbreviation": "DE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Departamento de emergencias", "langTrad": "eng", "meaningTrad": "Emergency ward", "abbreviationTrad": "EW"}
         ]
     },
     {
@@ -74,12 +92,71 @@
         ]
     },
     {
+        "abbLowerCase": "ek",
+        "abbreviation": "EK",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad de Kawasaki", "langTrad": "eng", "meaningTrad": "Kawasaki disease", "abbreviationTrad": "KD"}
+        ]
+    },
+    {
+        "abbLowerCase": "er",
+        "abbreviation": "Er",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad renal", "langTrad": "eng", "meaningTrad": "Kidney disease", "abbreviationTrad": "KD"},
+            {"lang": "eng", "meaning": "Emergency room", "langTrad": "esp", "meaningTrad": "Sala de urgencias, sala de emergencias", "abbreviationTrad": "SU o ER, por sus siglas en inglés"},
+            {"lang": "eng", "meaning": "Endoplasmic reticulum", "langTrad": "esp", "meaningTrad": "Retículo endoplasmático", "abbreviationTrad": "RE"},
+            {"lang": "eng", "meaning": "Estrogen receptor", "langTrad": "esp", "meaningTrad": "Receptor de estrógeno", "abbreviationTrad": "RE"},
+            {"lang": "eng", "meaning": "Extended release", "langTrad": "esp", "meaningTrad": "Liberación prolongada, liberación extendida", "abbreviationTrad": "LP, LE"}
+        ]
+    },
+    {
+        "abbLowerCase": "ew",
+        "abbreviation": "EW",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Emergency ward", "langTrad": "esp", "meaningTrad": "Departamento de emergencias", "abbreviationTrad": "DE"}
+        ]
+    },
+    {
         "abbLowerCase": "irm",
         "abbreviation": "IRM",
         "use": "sigla",
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Imagen por resonancia magnética", "langTrad": "eng", "meaningTrad": "Magnetic Resonance Imaging", "abbreviationTrad": "MRI"}
+        ]
+    },
+    {
+        "abbLowerCase": "kd",
+        "abbreviation": "KD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Kidney disease", "langTrad": "esp", "meaningTrad": "Enfermedad renal", "abbreviationTrad": "ER"},
+            {"lang": "eng", "meaning": "Kawasaki disease", "langTrad": "esp", "meaningTrad": "Enfermedad de Kawasaki", "abbreviationTrad": "EK"}
+        ]
+    },
+    {
+        "abbLowerCase": "le",
+        "abbreviation": "LE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Liberación extendida", "langTrad": "eng", "meaningTrad": "Extended release", "abbreviationTrad": "ER"}
+        ]
+    },
+    {
+        "abbLowerCase": "lp",
+        "abbreviation": "LP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Liberación prolongada", "langTrad": "eng", "meaningTrad": "Extended release", "abbreviationTrad": "ER"}
         ]
     },
     {
@@ -107,6 +184,16 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Positron emission tomography and computed tomography", "langTrad": "esp", "meaningTrad": "Tomografía por emisión de positrones con tomografía computarizada", "abbreviationTrad": "TEP"}
+        ]
+    },
+    {
+        "abbLowerCase": "re",
+        "abbreviation": "RE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Receptor de estrógeno", "langTrad": "eng", "meaningTrad": "Estrogen receptor", "abbreviationTrad": "ER"},
+            {"lang": "esp", "meaning": "Retículo endoplasmático", "langTrad": "eng", "meaningTrad": "Endoplasmic reticulum", "abbreviationTrad": "ER"}
         ]
     },
     {

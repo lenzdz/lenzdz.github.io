@@ -18,7 +18,6 @@ request.onload = function () {
     // Search funcionality
     function search(searchedWord) {
         searchedWord = String(searchedWord.toLowerCase()).trim();
-        console.log(searchedWord);
         matches = new Set();
 
         // Search abbreviation by searched word
@@ -31,9 +30,10 @@ request.onload = function () {
 
         // Search fuzzy matches (useful for not exact searches)
         fuzzyByAbbreviation = fuzzySearchMatchesByAbbreviation(searchedWord);
+        fuzzyByTerm = fuzzySearchMatchesByTerm(searchedWord);
 
         // Merge all Sets to have just one entry per item found in the fuzzy searches
-        matches = new Set([...matches, ...fuzzyByAbbreviation]);
+        matches = new Set([...matches, ...fuzzyByAbbreviation, ...fuzzyByTerm]);
 
         // If any of the searches was succesful, then show in screen results. Otherwise, show not found message
         if (matches.size > 0) {
@@ -68,6 +68,33 @@ request.onload = function () {
     //     return fuzzyMatches;
     // }
 
+    // Search fuzzy matches by meaning. Prioritizes results that match accents and diacritics.
+    function fuzzySearchMatchesByTerm(searchedWord) {
+        fuzzyMatches = new Set();;
+
+        // Prioritizing of results that match accents and diacritics.
+        for (var i = 0; i < abDictionary.length; i++) {
+             abDictionary[i].meanings.forEach(function(element) {
+                if (element.meaning.toLowerCase().includes(searchedWord)) {
+                    fuzzyMatches.add(abDictionary[i]);
+                };
+             }) 
+        }
+
+        // Secondary loop that searches regardless of accents and diacritics.
+        normalizedSearchedWord = searchedWord.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+
+        for (var i = 0; i < abDictionary.length; i++) {
+            abDictionary[i].meanings.forEach(function(element) {
+               if (element.meaning.toLowerCase().includes(normalizedSearchedWord)) {
+                fuzzyMatches.add(abDictionary[i]);
+               };
+            }) 
+       }
+
+        return fuzzyMatches;
+    }
+
     function fuzzySearchMatchesByAbbreviation(searchedWord) {
         fuzzyMatches = new Set();
 
@@ -100,9 +127,12 @@ request.onload = function () {
 
             let meanings = ``;
             element.meanings.forEach (function(definition) {
+                normalizedSearchedWord = searchedWord.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+                meaning = definition.meaning.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+                meaning = meaning.replace(new RegExp(normalizedSearchedWord, "gi"), (match) => `<mark>${match}</mark>`);
                 meanings += `
                 <li>
-                    ${definition.lang}. ${definition.meaning}.
+                    ${definition.lang}. ${meaning}.
                     <br />
                     <span style="color: var(--color1)">trad. ${definition.langTrad}. ${definition.meaningTrad} (${definition.abbreviationTrad}).</span>
                 </li>`;
@@ -139,6 +169,6 @@ removeIcon.addEventListener("click", () => {
      searchInput.value = "";
      searchInput.focus();
      wrapper.classList.remove("active");
-     infoText.innerHTML = "Escribe el nombre de una revista, o su abreviatura, y presiona la tecla 'Enter' para buscar información sobre ella.";
+     infoText.innerHTML = "Escribe el término, sigla o abreviatura que deseas buscar y presiona la tecla 'Enter' para obtener información.";
      infoText.style.color = "var(--gray)";
  });

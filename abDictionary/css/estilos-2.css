@@ -196,6 +196,10 @@ mark {
 
 @media only screen and (min-width: 768px) {
 
+    body {
+        max-height: 100vh;
+    }
+
     .wrapper {
         width: 50%;
     }

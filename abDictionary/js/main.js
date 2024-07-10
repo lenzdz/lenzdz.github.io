@@ -7,6 +7,8 @@ const wrapper = document.querySelector(".wrapper"),
 request.onload = function () {
     // Load JSON
     var abDictionary = JSON.parse(request.responseText);
+    console.log("La base de datos tiene " + abDictionary.length + " entradas.")
+
     // Enter to search functionality
     searchInput.addEventListener("keyup", (e) => {
         if (e.key === "Enter" && e.target.value && e.target.value.length > 1) {
@@ -30,9 +32,10 @@ request.onload = function () {
         // Search fuzzy matches (useful for not exact searches)
         fuzzyByAbbreviation = fuzzySearchMatchesByAbbreviation(searchedWord);
         fuzzyByTerm = fuzzySearchMatchesByTerm(searchedWord);
+        fuzzyByTrad = fuzzySearchMatchesByTermTrad(searchedWord);
 
         // Merge all Sets to have just one entry per item found in the fuzzy searches
-        matches = new Set([...matches, ...fuzzyByAbbreviation, ...fuzzyByTerm]);
+        matches = new Set([...matches, ...fuzzyByAbbreviation, ...fuzzyByTerm, ...fuzzyByTrad]);
 
         // If any of the searches was succesful, then show in screen results. Otherwise, show not found message
         if (matches.size > 0) {
@@ -54,6 +57,17 @@ request.onload = function () {
         }
 
         return found;
+    }
+
+    function fuzzySearchMatchesByAbbreviation(searchedWord) {
+        fuzzyMatches = new Set();
+
+        for (var i = 0; i < abDictionary.length; i++) {
+             if (abDictionary[i].abbLowerCase.includes(searchedWord)){
+                fuzzyMatches.add(abDictionary[i]);
+             };
+        }
+        return fuzzyMatches;
     }
 
     // function fuzzySearchMatchesByTerm(searchedWord) {
@@ -94,14 +108,30 @@ request.onload = function () {
         return fuzzyMatches;
     }
 
-    function fuzzySearchMatchesByAbbreviation(searchedWord) {
-        fuzzyMatches = new Set();
+    // Search fuzzy matches by meaning translation. Prioritizes results that match accents and diacritics.
+    function fuzzySearchMatchesByTermTrad(searchedWord) {
+        fuzzyMatches = new Set();;
+
+        // Prioritizing of results that match accents and diacritics.
+        for (var i = 0; i < abDictionary.length; i++) {
+             abDictionary[i].meanings.forEach(function(element) {
+                if (element.meaningTrad.toLowerCase().includes(searchedWord)) {
+                    fuzzyMatches.add(abDictionary[i]);
+                };
+             }) 
+        }
+
+        // Secondary loop that searches regardless of accents and diacritics.
+        normalizedSearchedWord = searchedWord.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
         for (var i = 0; i < abDictionary.length; i++) {
-             if (abDictionary[i].abbLowerCase.includes(searchedWord)){
+            abDictionary[i].meanings.forEach(function(element) {
+               if (element.meaningTrad.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(normalizedSearchedWord)) {
                 fuzzyMatches.add(abDictionary[i]);
-             };
-        }
+               };
+            }) 
+       }
+
         return fuzzyMatches;
     }
 

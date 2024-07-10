@@ -64,6 +64,15 @@
         ]
     },
     {
+        "abbLowerCase": "cbr",
+        "abbreviation": "CBR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Clinical benefit rate", "langTrad": "esp", "meaningTrad": "Tasa de beneficio clínico", "abbreviationTrad": "TBC"}
+        ]
+    },
+    {
         "abbLowerCase": "ci",
         "abbreviation": "CI",
         "use": "sigla",
@@ -110,6 +119,15 @@
         ]
     },
     {
+        "abbLowerCase": "dcr",
+        "abbreviation": "DCR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Disease control rate", "langTrad": "esp", "meaningTrad": "Tasa de control de la enfermedad", "abbreviationTrad": "TCE"}
+        ]
+    },
+    {
         "abbLowerCase": "de",
         "abbreviation": "DE",
         "use": "sigla",
@@ -139,12 +157,30 @@
         ]
     },
     {
+        "abbLowerCase": "dp",
+        "abbreviation": "DP",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Disease progression", "langTrad": "esp", "meaningTrad": "Progresión de la enfermedad", "abbreviationTrad": "PE"}
+        ]
+    },
+    {
         "abbLowerCase": "dr",
         "abbreviation": "DR",
         "use": "sigla",
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Duración de la respuesta", "langTrad": "eng", "meaningTrad": "Duration of response", "abbreviationTrad": "DoR"}
+        ]
+    },
+    {
+        "abbLowerCase": "ecog",
+        "abbreviation": "ECOG",
+        "use": "sigla",
+        "language": "inglés y español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Eastern Cooperative Oncology Group", "langTrad": "esp", "meaningTrad": "Grupo Oncológico Cooperativo del Este", "abbreviationTrad": "ECOG, por sus siglas en inglés"}
         ]
     },
     {
@@ -167,6 +203,15 @@
         ]
     },
     {
+        "abbLowerCase": "ef",
+        "abbreviation": "EF",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Estado funcional", "langTrad": "eng", "meaningTrad": "Functional status", "abbreviationTrad": "FS"}
+        ]
+    },
+    {
         "abbLowerCase": "efs",
         "abbreviation": "EFS",
         "use": "sigla",
@@ -176,12 +221,30 @@
         ]
     },
     {
+        "abbLowerCase": "eich",
+        "abbreviation": "EICH",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad de injerto contra huésped", "langTrad": "eng", "meaningTrad": "Graft versus host disease", "abbreviationTrad": "GvHD"}
+        ]
+    },
+    {
         "abbLowerCase": "ek",
         "abbreviation": "EK",
         "use": "sigla",
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Enfermedad de Kawasaki", "langTrad": "eng", "meaningTrad": "Kawasaki disease", "abbreviationTrad": "KD"}
+        ]
+    },
+    {
+        "abbLowerCase": "emr",
+        "abbreviation": "EMR",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad mínima residual", "langTrad": "eng", "meaningTrad": "Minimal residual disease", "abbreviationTrad": "MRD"}
         ]
     },
     {
@@ -225,12 +288,30 @@
         ]
     },
     {
+        "abbLowerCase": "fs",
+        "abbreviation": "FS",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Functional status", "langTrad": "esp", "meaningTrad": "Estado funcional", "abbreviationTrad": "EF"}
+        ]
+    },
+    {
         "abbLowerCase": "gi",
         "abbreviation": "GI",
         "use": "sigla",
         "language": "español e inglés",
         "meanings": [
             {"lang": "esp", "meaning": "Gastrointestinal", "langTrad": "eng", "meaningTrad": "Gastrointestinal", "abbreviationTrad": "GI"}
+        ]
+    },
+    {
+        "abbLowerCase": "gvhd",
+        "abbreviation": "GvHD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Graft versus host disease", "langTrad": "esp", "meaningTrad": "Enfermedad de injerto contra huésped", "abbreviationTrad": "EICH"}
         ]
     },
     {
@@ -370,6 +451,15 @@
         ]
     },
     {
+        "abbLowerCase": "mrd",
+        "abbreviation": "MRD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Minimal residual disease", "langTrad": "esp", "meaningTrad": "Enfermedad mínima residual", "abbreviationTrad": "EMR"}
+        ]
+    },
+    {
         "abbLowerCase": "mri",
         "abbreviation": "MRI",
         "use": "sigla",
@@ -388,12 +478,30 @@
         ]
     },
     {
+        "abbLowerCase": "orr",
+        "abbreviation": "ORR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Objective response rate", "langTrad": "esp", "meaningTrad": "Tasa de respuesta objetiva", "abbreviationTrad": "TRO"}
+        ]
+    },
+    {
         "abbLowerCase": "os",
         "abbreviation": "OS",
         "use": "sigla",
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Overall survival", "langTrad": "esp", "meaningTrad": "Supervivencia global", "abbreviationTrad": "SG"}
+        ]
+    },
+    {
+        "abbLowerCase": "pe",
+        "abbreviation": "PE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Progresión de la enfermedad", "langTrad": "eng", "meaningTrad": "Disease progression", "abbreviationTrad": "DP"}
         ]
     },
     {
@@ -424,12 +532,39 @@
         ]
     },
     {
+        "abbLowerCase": "pr",
+        "abbreviation": "PR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Partial response", "langTrad": "esp", "meaningTrad": "Respuesta parcial", "abbreviationTrad": "RP"}
+        ]
+    },
+    {
         "abbLowerCase": "psa",
         "abbreviation": "PSA",
         "use": "sigla",
         "language": "inglés y español",
         "meanings": [
             {"lang": "eng", "meaning": "Prostate-specific antigen", "langTrad": "esp", "meaningTrad": "Antígeno prostático específico", "abbreviationTrad": "PSA, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "qol",
+        "abbreviation": "QoL",
+        "use": "sigla",
+        "language": "inglés y español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Quality of life", "langTrad": "esp", "meaningTrad": "Calidad de vida", "abbreviationTrad": "QoL, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "rc",
+        "abbreviation": "RC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Respuesta completa", "langTrad": "eng", "meaningTrad": "Complete response", "abbreviationTrad": "CR"}
         ]
     },
     {
@@ -440,6 +575,15 @@
         "meanings": [
             {"lang": "esp", "meaning": "Receptor de estrógeno", "langTrad": "eng", "meaningTrad": "Estrogen receptor", "abbreviationTrad": "ER"},
             {"lang": "esp", "meaning": "Retículo endoplasmático", "langTrad": "eng", "meaningTrad": "Endoplasmic reticulum", "abbreviationTrad": "ER"}
+        ]
+    },
+    {
+        "abbLowerCase": "recist",
+        "abbreviation": "RECIST",
+        "use": "sigla",
+        "language": "inglés y español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Response Evaluation Criteria In Solid Tumors", "langTrad": "esp", "meaningTrad": "Criterios de Evaluación de Respuesta en Tumores Sólidos", "abbreviationTrad": "RECIST, por sus siglas en inglés"}
         ]
     },
     {
@@ -466,7 +610,7 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp", "meaning": "Respuesta completa", "langTrad": "eng", "meaningTrad": "Complete response", "abbreviationTrad": "CR"}
+            {"lang": "esp", "meaning": "Respuesta parcial", "langTrad": "eng", "meaningTrad": "Partial response", "abbreviationTrad": "PR"}
         ]
     },
     {
@@ -475,7 +619,8 @@
         "use": "sigla",
         "language": "español e inglés",
         "meanings": [
-            {"lang": "esp", "meaning": "Riesgo relativo", "langTrad": "eng", "meaningTrad": "Relative risk", "abbreviationTrad": "RR"}
+            {"lang": "esp", "meaning": "Riesgo relativo", "langTrad": "eng", "meaningTrad": "Relative risk", "abbreviationTrad": "RR"},
+            {"lang": "eng", "meaning": "Response rate", "langTrad": "esp", "meaningTrad": "Tasa de respuesta", "abbreviationTrad": "TR"}
         ]
     },
     {
@@ -553,12 +698,30 @@
         ]
     },
     {
+        "abbLowerCase": "tbc",
+        "abbreviation": "TBC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tasa de beneficio clínico", "langTrad": "eng", "meaningTrad": "Clinical benefit rate", "abbreviationTrad": "CBR"}
+        ]
+    },
+    {
         "abbLowerCase": "tc",
         "abbreviation": "TC",
         "use": "sigla",
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Tomografía computarizada", "langTrad": "eng", "meaningTrad": "Computed tomography, computerized tomography", "abbreviationTrad": "CT"}
+        ]
+    },
+    {
+        "abbLowerCase": "tce",
+        "abbreviation": "TCE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tasa de control de la enfermedad", "langTrad": "eng", "meaningTrad": "Disease control rate", "abbreviationTrad": "DCR"}
         ]
     },
     {
@@ -577,6 +740,24 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Tomografía por emisión de positrones con tomografía computarizada", "langTrad": "eng", "meaningTrad": "Positron emission tomography and computed tomography", "abbreviationTrad": "PET-CT"}
+        ]
+    },
+    {
+        "abbLowerCase": "tr",
+        "abbreviation": "TR",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tasa de respuesta", "langTrad": "eng", "meaningTrad": "Response rate", "abbreviationTrad": "RR"}
+        ]
+    },
+    {
+        "abbLowerCase": "tro",
+        "abbreviation": "TRO",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tasa de respuesta objetiva", "langTrad": "eng", "meaningTrad": "Objective response rate", "abbreviationTrad": "ORR"}
         ]
     },
     {

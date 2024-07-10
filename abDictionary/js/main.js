@@ -162,6 +162,10 @@ request.onload = function () {
 
                 let meaningTrad = highlightMatch(definition.meaningTrad, searchedWord);
                 meaningTrad = highlightInexactMatch(meaningTrad, searchedWord);
+
+                meaning = mayusCorrection(definition.meaning, meaning);
+                meaningTrad = mayusCorrection(definition.meaningTrad, meaningTrad);
+
                 meanings += `
                 <li>
                     ${definition.lang}. ${meaning}.
@@ -241,8 +245,8 @@ request.onload = function () {
             
         }
 
-        // I don't know how this is working, but if I remove it, the program doesn't work how I want it to.
-        let regex = new RegExp(normalizeString(searchedWord), "gi");
+        // I don't know how this is working, but if I remove it, the program doesn't work how I want it to. 
+        let regex = new RegExp((searchedWord), "gi");
         return text.replace(regex, (match) => `<mark>${match}</mark>`);
     }
 
@@ -261,6 +265,7 @@ request.onload = function () {
     // Function searches for the temporal accented word position in the database's term going through the loop and surrounds it with an HTML <mark> so that it gets highlighted by the show function.
     function indexOfSearchedWord(tempWord, text) {
         // If the temporal accented word is the first at the term's meaning, the program proceeds
+        console.log(text.toLowerCase().indexOf(tempWord) == 0);
         if (text.toLowerCase().indexOf(tempWord) == 0) {
             text = text.toLowerCase().replace(tempWord, (match) => `<mark>${match}</mark>`);
             text = text.toUpperCase();
@@ -276,7 +281,7 @@ request.onload = function () {
             text = text.toLowerCase().replace(tempWord, (match) => `<mark>${match}</mark>`);
             // If the term's meaning evaluated at the loop doesn't begin with "[", it proceeds to change its first character to upper case. In case the first character is, indeed, a "[", it proceeds to change the second character to upper case.
             if (text.charAt(0) != "[") {
-                text = text.charAt(0).toUpperCase() + text.slice(7).toLowerCase();
+                text = text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
             } else if (text.charAt(0) == "[") {
                 text = text.charAt(0) + text.charAt(1).toUpperCase() + text.slice(2).toLowerCase();
             }
@@ -285,8 +290,48 @@ request.onload = function () {
         return text;
     }
 
-    function normalizeString(str) {
-        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    function mayusCorrection(originalText, meaning) {
+        let numUpperCases = countUpperCases(originalText);
+
+        const exceptions = ["de", "del", "a", "en", "the"];
+        if (numUpperCases > 1) {
+
+            return meaning.split(' ').map((word) => {
+                if (word.startsWith("<mark>") && word.endsWith('</mark>')) {
+                    if (exceptions.includes(word.slice(6, -7).toLowerCase())) {
+                        word.charAt(6).toLowerCase();
+                        return word;
+                    } else {
+                        word = word.slice(0,6) + word.charAt(6).toUpperCase() + word.slice(7);
+                        return word;
+                    }
+                } else if (word.startsWith("<mark>")) {
+                    if (exceptions.includes(word.slice(6).toLowerCase())) {
+                        word.charAt(6).toLowerCase();
+                        return word;
+                    } else {
+                        word = word.slice(0,6) + word.charAt(6).toUpperCase() + word.slice(7);
+                        return word;
+                    }
+                } else {
+                    if (exceptions.includes(word.toLowerCase())) {
+                        word.toLowerCase();
+                        return word;
+                    } else {
+                        word = word.charAt(0).toUpperCase() + word.slice(1);
+                        return word;
+                    }
+                }
+            }).join(' ');
+
+        } else {
+            return meaning;
+        }
+    }
+
+    function countUpperCases(text) {
+        const mayus = text.match(/[A-ZÁÉÍÓÚÜÑ]/g);
+        return mayus ? mayus.length : 0;
     }
 
 };

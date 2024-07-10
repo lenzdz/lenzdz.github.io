@@ -465,7 +465,7 @@
         "use": "sigla",
         "language": "inglés",
         "meanings": [
-            {"lang": "eng", "meaning": "Magnetic Resonance Imaging", "langTrad": "esp", "meaningTrad": "Imagen por resonancia magnética", "abbreviationTrad": "IRM"}
+            {"lang": "eng", "meaning": "Magnetic resonance imaging", "langTrad": "esp", "meaningTrad": "Imagen por resonancia magnética", "abbreviationTrad": "IRM"}
         ]
     },
     {

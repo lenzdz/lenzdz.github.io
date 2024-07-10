@@ -9,6 +9,33 @@
         ]
     },
     {
+        "abbLowerCase": "acei",
+        "abbreviation": "ACEI",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Angiotensin-converting enzyme inhibitors", "langTrad": "esp", "meaningTrad": "Inhibidores de la enzima angiotensina convertasa", "abbreviationTrad": "IECA"}
+        ]
+    },
+    {
+        "abbLowerCase": "aha",
+        "abbreviation": "AHA",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "American Heart Asociation", "langTrad": "esp", "meaningTrad": "Asociación Americana del Corazón", "abbreviationTrad": "AHA, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "aids",
+        "abbreviation": "AIDS",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Acquired immunodeficiency syndrome", "langTrad": "esp", "meaningTrad": "Síndrome de inmunodeficiencia adquirida", "abbreviationTrad": "SIDA"}
+        ]
+    },
+    {
         "abbLowerCase": "all",
         "abbreviation": "ALL",
         "use": "sigla",
@@ -24,6 +51,33 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Acute myeloid leukemia", "langTrad": "esp", "meaningTrad": "Leucemia mieloide aguda", "abbreviationTrad": "LMA"}
+        ]
+    },
+    {
+        "abbLowerCase": "apoa1",
+        "abbreviation": "apoA1",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Apolipoproteína A1", "langTrad": "eng", "meaningTrad": "Apolipoprotein A1", "abbreviationTrad": "apoA1"}
+        ]
+    },
+    {
+        "abbLowerCase": "apob",
+        "abbreviation": "apoB",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Apolipoproteína B", "langTrad": "eng", "meaningTrad": "Apolipoprotein B", "abbreviationTrad": "apoB"}
+        ]
+    },
+    {
+        "abbLowerCase": "arr",
+        "abbreviation": "ARR",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Absolute risk reduction", "langTrad": "eng", "meaningTrad": "Reducción del riesgo absoluto", "abbreviationTrad": "RRA"}
         ]
     },
     {
@@ -45,6 +99,24 @@
         ]
     },
     {
+        "abbLowerCase": "bmi",
+        "abbreviation": "BMI",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Body mass index", "langTrad": "esp", "meaningTrad": "Índice de masa corporal", "abbreviationTrad": "IMC"}
+        ]
+    },
+    {
+        "abbLowerCase": "bph",
+        "abbreviation": "BPH",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Benign prostatic hyperplasia", "langTrad": "esp", "meaningTrad": "Hiperplasia prostática benigna", "abbreviationTrad": "HPB"}
+        ]
+    },
+    {
         "abbLowerCase": "ca",
         "abbreviation": "CA",
         "use": "sigla y abreviatura",
@@ -52,6 +124,15 @@
         "meanings": [
             {"lang": "esp", "meaning": "Cáncer", "langTrad": "eng", "meaningTrad": "Cancer", "abbreviationTrad": "CA"},
             {"lang": "eng", "meaning": "Cardiac arrest", "langTrad": "esp", "meaningTrad": "Paro cardíaco", "abbreviationTrad": "PC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cad",
+        "abbreviation": "CAD",
+        "use": "sigla",
+        "language": "inglés y español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Coronary artery disease", "langTrad": "esp", "meaningTrad": "Arteriopatía coronaria, enfermedad de las arterias coronarias", "abbreviationTrad": "EAC o CAD, por sus siglas en inglés"}
         ]
     },
     {
@@ -172,6 +253,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Duración de la respuesta", "langTrad": "eng", "meaningTrad": "Duration of response", "abbreviationTrad": "DoR"}
+        ]
+    },
+    {
+        "abbLowerCase": "eac",
+        "abbreviation": "EAC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Arteriopatía coronaria, enfermedad de las arterias coronarias", "langTrad": "eng", "meaningTrad": "Coronary artery disease", "abbreviationTrad": "CAD"}
         ]
     },
     {
@@ -333,12 +423,30 @@
         ]
     },
     {
+        "abbLowerCase": "hiv",
+        "abbreviation": "HIV",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Human immunodeficiency virus", "langTrad": "esp", "meaningTrad": "Virus de inmunodeficiencia humana", "abbreviationTrad": "VIH"}
+        ]
+    },
+    {
         "abbLowerCase": "hpa",
         "abbreviation": "HPA",
         "use": "sigla",
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Hypothalamic-pituitary-adrenal [axis]", "langTrad": "esp", "meaningTrad": "[Eje] hipotalámico-hipofisario-adrenal", "abbreviationTrad": "HHS"}
+        ]
+    },
+    {
+        "abbLowerCase": "hpb",
+        "abbreviation": "HPB",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Hiperplasia prostática benigna", "langTrad": "eng", "meaningTrad": "Benign prostatic hyperplasia", "abbreviationTrad": "BPH"}
         ]
     },
     {
@@ -366,6 +474,33 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Intervalo de confianza", "langTrad": "eng", "meaningTrad": "Confidence interval", "abbreviationTrad": "CI"}
+        ]
+    },
+    {
+        "abbLowerCase": "idfs",
+        "abbreviation": "iDFS",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Invasive disease-free survival", "langTrad": "esp", "meaningTrad": "Supervivencia libre de enfermedad invasiva", "abbreviationTrad": "SLEI"}
+        ]
+    },
+    {
+        "abbLowerCase": "ieca",
+        "abbreviation": "IECA",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Inhibidores de la enzima angiotensina convertasa", "langTrad": "eng", "meaningTrad": "Angiotensin-converting enzyme inhibitors", "abbreviationTrad": "ACEI"}
+        ]
+    },
+    {
+        "abbLowerCase": "imc",
+        "abbreviation": "IMC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Índice de masa corporal", "langTrad": "esp", "meaningTrad": "Body mass index", "abbreviationTrad": "BMI"}
         ]
     },
     {
@@ -475,6 +610,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Organización Mundial de la Salud", "langTrad": "eng", "meaningTrad": "World Health Organization", "abbreviationTrad": "WHO"}
+        ]
+    },
+    {
+        "abbLowerCase": "or",
+        "abbreviation": "OR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Odds ratio", "langTrad": "esp", "meaningTrad": "Razón de momios, razón de oportunidades, razón de probabilidades", "abbreviationTrad": "RM"}
         ]
     },
     {
@@ -624,6 +768,24 @@
         ]
     },
     {
+        "abbLowerCase": "rra",
+        "abbreviation": "RRA",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Reducción del riesgo absoluto", "langTrad": "eng", "meaningTrad": "Absolute risk reduction", "abbreviationTrad": "ARR"}
+        ]
+    },
+    {
+        "abbLowerCase": "rrr",
+        "abbreviation": "RRR",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Reducción del riesgo relativo", "langTrad": "eng", "meaningTrad": "Relative risk reduction", "abbreviationTrad": "RRR"}
+        ]
+    },
+    {
         "abbLowerCase": "sd",
         "abbreviation": "SD",
         "use": "sigla",
@@ -640,6 +802,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Fibromialgia, síndrome de fibromialgia", "langTrad": "eng", "meaningTrad": "Fibromyalgia syndrome", "abbreviationTrad": "FMS"}
+        ]
+    },
+    {
+        "abbLowerCase": "sida",
+        "abbreviation": "SIDA",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Síndrome de inmunodeficiencia adquirida", "langTrad": "eng", "meaningTrad": "Acquired immunodeficiency syndrome", "abbreviationTrad": "AIDS"}
         ]
     },
     {
@@ -677,6 +848,15 @@
         "meanings": [
             {"lang": "esp", "meaning": "Supervivencia libre de enfermedad", "langTrad": "eng", "meaningTrad": "Disease-free survival", "abbreviationTrad": "DFS"},
             {"lang": "esp", "meaning": "Supervivencia libre de eventos", "langTrad": "eng", "meaningTrad": "Event-free survival", "abbreviationTrad": "EFS"}
+        ]
+    },
+    {
+        "abbLowerCase": "slei",
+        "abbreviation": "SLEI",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Supervivencia libre de enfermedad invasiva", "langTrad": "eng", "meaningTrad": "Invasive disease-free survival", "abbreviationTrad": "iDFS"}
         ]
     },
     {
@@ -743,6 +923,15 @@
         ]
     },
     {
+        "abbLowerCase": "tp",
+        "abbreviation": "TP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tiempo hasta la progresión", "langTrad": "eng", "meaningTrad": "Time to progression", "abbreviationTrad": "TTP"}
+        ]
+    },
+    {
         "abbLowerCase": "tr",
         "abbreviation": "TR",
         "use": "sigla",
@@ -758,6 +947,24 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Tasa de respuesta objetiva", "langTrad": "eng", "meaningTrad": "Objective response rate", "abbreviationTrad": "ORR"}
+        ]
+    },
+    {
+        "abbLowerCase": "ttp",
+        "abbreviation": "TTP",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Time to progression", "langTrad": "esp", "meaningTrad": "Tiempo hasta la progresión", "abbreviationTrad": "TP"}
+        ]
+    },
+    {
+        "abbLowerCase": "vih",
+        "abbreviation": "VIH",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Virus de inmunodeficiencia humana", "langTrad": "eng", "meaningTrad": "Human immunodeficiency virus", "abbreviationTrad": "HIV"}
         ]
     },
     {

@@ -7,7 +7,6 @@ const wrapper = document.querySelector(".wrapper"),
 request.onload = function () {
     // Load JSON
     var abDictionary = JSON.parse(request.responseText);
-
     // Enter to search functionality
     searchInput.addEventListener("keyup", (e) => {
         if (e.key === "Enter" && e.target.value && e.target.value.length > 1) {
@@ -86,7 +85,7 @@ request.onload = function () {
 
         for (var i = 0; i < abDictionary.length; i++) {
             abDictionary[i].meanings.forEach(function(element) {
-               if (element.meaning.toLowerCase().includes(normalizedSearchedWord)) {
+               if (element.meaning.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").includes(normalizedSearchedWord)) {
                 fuzzyMatches.add(abDictionary[i]);
                };
             }) 
@@ -121,20 +120,23 @@ request.onload = function () {
         // searchedWord details
         document.querySelector(".content").innerHTML = "";
         matches.forEach (function(element) {
-            abbreviation = element.abbreviation.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+            let abbreviation = highlightMatch(element.abbreviation, searchedWord);
             use = element.use;
             language = element.language;
 
             let meanings = ``;
             element.meanings.forEach (function(definition) {
-                normalizedSearchedWord = searchedWord.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-                meaning = definition.meaning.replace(new RegExp(searchedWord, "gi"), (match) => `<mark>${match}</mark>`);
-                meaning = meaning.replace(new RegExp(normalizedSearchedWord, "gi"), (match) => `<mark>${match}</mark>`);
+
+                let meaning = highlightMatch(definition.meaning, searchedWord);
+                meaning = highlightInexactMatch(meaning, searchedWord);
+
+                let meaningTrad = highlightMatch(definition.meaningTrad, searchedWord);
+                meaningTrad = highlightInexactMatch(meaningTrad, searchedWord);
                 meanings += `
                 <li>
                     ${definition.lang}. ${meaning}.
                     <br />
-                    <span style="color: var(--color1)">trad. ${definition.langTrad}. ${definition.meaningTrad} (${definition.abbreviationTrad}).</span>
+                    <span style="color: var(--color1)">trad. ${definition.langTrad}. ${meaningTrad} (${definition.abbreviationTrad}).</span>
                 </li>`;
             })
 
@@ -161,6 +163,102 @@ request.onload = function () {
         }
         );
     }
+
+    function highlightMatch(text, searchedWord) {
+        let regex = new RegExp(searchedWord, "gi");
+        return text.replace(regex, (match) => `<mark>${match}</mark>`);
+    }
+
+    // To highlight words with accents and diacritics, even if the user doesn't write them. For example, if a user searches "cancer" the program will return objects with the meaning "cancer" and "cáncer" (with accent).
+    function highlightInexactMatch(text, searchedWord) {
+
+        for (let i = 0; i < searchedWord.length; i++) {
+            let tempWord = "";
+            if (searchedWord[i] == "a") {
+                text = addingAccentsDiacritics("á", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "a") {
+                text = addingAccentsDiacritics("à", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "e") {
+                text = addingAccentsDiacritics("é", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "e") {
+                text = addingAccentsDiacritics("è", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "i") {
+                text = addingAccentsDiacritics("í", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "i") {
+                text = addingAccentsDiacritics("ì", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "o") {
+                text = addingAccentsDiacritics("ó", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "o") {
+                text = addingAccentsDiacritics("ò", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "u") {
+                text = addingAccentsDiacritics("ú", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "u") {
+                text = addingAccentsDiacritics("ù", searchedWord, i, tempWord, text);
+            }
+            if (searchedWord[i] == "u") {
+                text = addingAccentsDiacritics("ü", searchedWord, i, tempWord, text);
+            }
+
+            
+        }
+
+        // I don't know how this is working, but if I remove it, the program doesn't work how I want it to.
+        let regex = new RegExp(normalizeString(searchedWord), "gi");
+        return text.replace(regex, (match) => `<mark>${match}</mark>`);
+    }
+
+    // Function adds an accent or diacritic to normal vocals to check if there are any coincidences with accented terms in the database
+    function addingAccentsDiacritics(newLetter, searchedWord, i, tempWord, text) {
+
+        tempWord = searchedWord.substring(0,i) + newLetter + searchedWord.substring(i+1, searchedWord.length);
+        if (text.toLowerCase().includes(tempWord)) {
+            text = indexOfSearchedWord(tempWord, text);
+        }
+
+        return text;
+        
+    }
+
+    // Function searches for the temporal accented word position in the database's term going through the loop and surrounds it with an HTML <mark> so that it gets highlighted by the show function.
+    function indexOfSearchedWord(tempWord, text) {
+        // If the temporal accented word is the first at the term's meaning, the program proceeds
+        if (text.toLowerCase().indexOf(tempWord) == 0) {
+            text = text.toLowerCase().replace(tempWord, (match) => `<mark>${match}</mark>`);
+            text = text.toUpperCase();
+            // If the term's meaning evaluated at the loop doesn't begin with "[", it proceeds to change its first character to upper case. In case the first character is, indeed, a "[", it proceeds to change the second character to upper case.
+            if (text.charAt(6) != "[") {
+                text = text.substring(0,6).toLowerCase() + text.charAt(6) + text.slice(7).toLowerCase();
+            } else if (text.charAt(6) == "[") {
+                text = text.substring(0,7).toLowerCase() + text.charAt(7) + text.slice(8).toLowerCase();
+            }
+        
+        // Else, if the temporal accented word isn't the first at the term's meaning, the program proceeds
+        } else {
+            text = text.toLowerCase().replace(tempWord, (match) => `<mark>${match}</mark>`);
+            // If the term's meaning evaluated at the loop doesn't begin with "[", it proceeds to change its first character to upper case. In case the first character is, indeed, a "[", it proceeds to change the second character to upper case.
+            if (text.charAt(0) != "[") {
+                text = text.charAt(0).toUpperCase() + text.slice(7).toLowerCase();
+            } else if (text.charAt(0) == "[") {
+                text = text.charAt(0) + text.charAt(1).toUpperCase() + text.slice(2).toLowerCase();
+            }
+        }
+
+        return text;
+    }
+
+    function normalizeString(str) {
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    }
+
 };
 
 request.send();

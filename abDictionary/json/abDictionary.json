@@ -82,6 +82,16 @@
         ]
     },
     {
+        "abbLowerCase": "cr",
+        "abbreviation": "CR",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Cociente de riesgos", "langTrad": "eng", "meaningTrad": "Hazard ratio", "abbreviationTrad": "HR"},
+            {"lang": "eng", "meaning": "Complete response", "langTrad": "esp", "meaningTrad": "Respuesta completa", "abbreviationTrad": "RP"}
+        ]
+    },
+    {
         "abbLowerCase": "ct",
         "abbreviation": "CT",
         "use": "sigla",
@@ -105,7 +115,8 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp", "meaning": "Departamento de emergencias", "langTrad": "eng", "meaningTrad": "Emergency ward", "abbreviationTrad": "EW"}
+            {"lang": "esp", "meaning": "Departamento de emergencias", "langTrad": "eng", "meaningTrad": "Emergency ward", "abbreviationTrad": "EW"},
+            {"lang": "esp", "meaning": "Desviación estándar", "langTrad": "eng", "meaningTrad": "Standard deviation", "abbreviationTrad": "SD"}
         ]
     },
     {
@@ -118,6 +129,25 @@
         ]
     },
     {
+        "abbLowerCase": "dor",
+        "abbreviation": "DoR, DOR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Duration of response (DoR)", "langTrad": "esp", "meaningTrad": "Duración de la respuesta", "abbreviationTrad": "DR"},
+            {"lang": "eng", "meaning": "Diagnostic odds ratio (DOR)", "langTrad": "esp", "meaningTrad": "Razón de momios diagnóstica, razón de oportunidades diagnóstica, razón de probabilidades diagnóstica", "abbreviationTrad": "RMD"}
+        ]
+    },
+    {
+        "abbLowerCase": "dr",
+        "abbreviation": "DR",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Duración de la respuesta", "langTrad": "eng", "meaningTrad": "Duration of response", "abbreviationTrad": "DoR"}
+        ]
+    },
+    {
         "abbLowerCase": "ecva",
         "abbreviation": "ECVA",
         "use": "sigla",
@@ -125,6 +155,15 @@
         "meanings": [
             {"lang": "esp", "meaning": "Enfermedad cardiovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cardiovascular Disease", "abbreviationTrad": "ASCVD"},
             {"lang": "esp", "meaning": "Enfermedad cerebrovascular aterosclerótica", "langTrad": "eng", "meaningTrad": "Atherosclerotic Cerebrovascular Disease", "abbreviationTrad": "ACD"}
+        ]
+    },
+    {
+        "abbLowerCase": "ee",
+        "abbreviation": "EE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad estable", "langTrad": "eng", "meaningTrad": "Stable disease", "abbreviationTrad": "SD"}
         ]
     },
     {
@@ -219,6 +258,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Hypothalamic-pituitary-adrenal [axis]", "langTrad": "esp", "meaningTrad": "[Eje] hipotalámico-hipofisario-adrenal", "abbreviationTrad": "HHS"}
+        ]
+    },
+    {
+        "abbLowerCase": "hr",
+        "abbreviation": "HR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Hazard ratio", "langTrad": "esp", "meaningTrad": "Cociente de riesgos", "abbreviationTrad": "CR o HR, por sus siglas en inglés"}
         ]
     },
     {
@@ -392,6 +440,52 @@
         "meanings": [
             {"lang": "esp", "meaning": "Receptor de estrógeno", "langTrad": "eng", "meaningTrad": "Estrogen receptor", "abbreviationTrad": "ER"},
             {"lang": "esp", "meaning": "Retículo endoplasmático", "langTrad": "eng", "meaningTrad": "Endoplasmic reticulum", "abbreviationTrad": "ER"}
+        ]
+    },
+    {
+        "abbLowerCase": "rm",
+        "abbreviation": "RM",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Razón de momios, razón de oportunidades, razón de probabilidades", "langTrad": "eng", "meaningTrad": "Odds ratio", "abbreviationTrad": "OR"}
+        ]
+    },
+    {
+        "abbLowerCase": "rmd",
+        "abbreviation": "RMD",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Razón de momios diagnóstica, razón de oportunidades diagnóstica, razón de probabilidades diagnóstica", "langTrad": "eng", "meaningTrad": "Diagnostic odds ratio", "abbreviationTrad": "DOR"}
+        ]
+    },
+    {
+        "abbLowerCase": "rp",
+        "abbreviation": "RP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Respuesta completa", "langTrad": "eng", "meaningTrad": "Complete response", "abbreviationTrad": "CR"}
+        ]
+    },
+    {
+        "abbLowerCase": "rr",
+        "abbreviation": "RR",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Riesgo relativo", "langTrad": "eng", "meaningTrad": "Relative risk", "abbreviationTrad": "RR"}
+        ]
+    },
+    {
+        "abbLowerCase": "sd",
+        "abbreviation": "SD",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Stable disease", "langTrad": "esp", "meaningTrad": "Enfermedad estable", "abbreviationTrad": "EE"},
+            {"lang": "eng", "meaning": "Standard deviation", "langTrad": "esp", "meaningTrad": "Desviación estándar", "abbreviationTrad": "DE"}
         ]
     },
     {

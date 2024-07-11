@@ -283,6 +283,15 @@
         ]
     },
     {
+        "abbLowerCase": "eca",
+        "abbreviation": "ECA",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Ensayo controlado aleatorizado", "langTrad": "eng", "meaningTrad": "Randomized controlled trial", "abbreviationTrad": "RCT"}
+        ]
+    },
+    {
         "abbLowerCase": "ecog",
         "abbreviation": "ECOG",
         "use": "sigla",
@@ -387,6 +396,15 @@
         ]
     },
     {
+        "abbLowerCase": "fc",
+        "abbreviation": "FC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Falla cardíaca", "langTrad": "eng", "meaningTrad": "Heart failure", "abbreviationTrad": "HF"}
+        ]
+    },
+    {
         "abbLowerCase": "flt3",
         "abbreviation": "FLT3",
         "use": "sigla",
@@ -438,6 +456,24 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Hodgkin's disease", "langTrad": "esp", "meaningTrad": "Enfermedad de Hodgkin", "abbreviationTrad": "HD, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "hf",
+        "abbreviation": "HF",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Heart failure", "langTrad": "esp", "meaningTrad": "Insuficiencia cardíaca, falla cardíaca", "abbreviationTrad": "IC o FC"}
+        ]
+    },
+    {
+        "abbLowerCase": "hfref",
+        "abbreviation": "HFrEF",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Heart failure with reduced ejection fraction", "langTrad": "esp", "meaningTrad": "Insuficiencia cardíaca con fracción de eyección reducida", "abbreviationTrad": "ICFEr"}
         ]
     },
     {
@@ -500,7 +536,17 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
+            {"lang": "esp", "meaning": "Insuficiencia cardíaca", "langTrad": "eng", "meaningTrad": "Heart failure", "abbreviationTrad": "HF"},
             {"lang": "esp", "meaning": "Intervalo de confianza", "langTrad": "eng", "meaningTrad": "Confidence interval", "abbreviationTrad": "CI"}
+        ]
+    },
+    {
+        "abbLowerCase": "icfer",
+        "abbreviation": "ICFEr",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Insuficiencia cardíaca con fracción de eyección reducida", "langTrad": "eng", "meaningTrad": "Heart failure with reduced ejection fraction", "abbreviationTrad": "HFrEF"}
         ]
     },
     {
@@ -736,6 +782,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Respuesta completa", "langTrad": "eng", "meaningTrad": "Complete response", "abbreviationTrad": "CR"}
+        ]
+    },
+    {
+        "abbLowerCase": "rct",
+        "abbreviation": "RCT",
+        "use": "sigla",
+        "language": "inglés y español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Randomized controlled trial", "langTrad": "esp", "meaningTrad": "Ensayo controlado aleatorizado", "abbreviationTrad": "ECA o RCT, por sus siglas en inglés"}
         ]
     },
     {

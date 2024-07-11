@@ -86,7 +86,7 @@
         "use": "sigla",
         "language": "inglés",
         "meanings": [
-            {"lang": "eng", "meaning": "Atherosclerotic cardiovascular cisease", "langTrad": "esp", "meaningTrad": "Enfermedad cardiovascular aterosclerótica", "abbreviationTrad": "ECVA"}
+            {"lang": "eng", "meaning": "Atherosclerotic cardiovascular disease", "langTrad": "esp", "meaningTrad": "Enfermedad cardiovascular aterosclerótica", "abbreviationTrad": "ECVA"}
         ]
     },
     {

@@ -200,6 +200,24 @@
         ]
     },
     {
+        "abbLowerCase": "cvd",
+        "abbreviation": "CVD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Cardiovascular disease", "langTrad": "esp", "meaningTrad": "Enfermedad cardiovascular", "abbreviationTrad": "ECV"}
+        ]
+    },
+    {
+        "abbLowerCase": "dash",
+        "abbreviation": "DASH",
+        "use": "sigla",
+        "language": "inglés y español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Dietary Approaches to Stop Hypertension", "langTrad": "esp", "meaningTrad": "Enfoques Alimentarios para Detener la Hipertensión", "abbreviationTrad": "DASH, por sus siglas en inglés"}
+        ]
+    },
+    {
         "abbLowerCase": "dcr",
         "abbreviation": "DCR",
         "use": "sigla",
@@ -271,6 +289,15 @@
         "language": "inglés y español",
         "meanings": [
             {"lang": "eng", "meaning": "Eastern Cooperative Oncology Group", "langTrad": "esp", "meaningTrad": "Grupo Oncológico Cooperativo del Este", "abbreviationTrad": "ECOG, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "ecv",
+        "abbreviation": "ECV",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad cardiovascular", "langTrad": "eng", "meaningTrad": "Cardiovascular disease", "abbreviationTrad": "CVD"}
         ]
     },
     {

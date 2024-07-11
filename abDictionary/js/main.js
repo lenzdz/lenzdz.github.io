@@ -293,7 +293,7 @@ request.onload = function () {
     function mayusCorrection(originalText, meaning) {
         let numUpperCases = countUpperCases(originalText);
 
-        const exceptions = ["de", "del", "a", "en", "the"];
+        const exceptions = ["de", "del", "a", "en", "la", "para", "the", "to"];
         if (numUpperCases > 1) {
 
             return meaning.split(' ').map((word) => {

@@ -172,6 +172,15 @@
         ]
     },
     {
+        "abbLowerCase": "cpos",
+        "abbreviation": "CPOS",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "[Índice de] superficies cariadas, perdidas y rellenas", "langTrad": "eng", "meaningTrad": "Decayed, missing, and filled surfaces [index]", "abbreviationTrad": "DMFS"}
+        ]
+    },
+    {
         "abbLowerCase": "cr",
         "abbreviation": "CR",
         "use": "sigla",
@@ -246,6 +255,16 @@
         ]
     },
     {
+        "abbLowerCase": "dmfs",
+        "abbreviation": "DMFS",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Decayed, missing, and filled surfaces [index]", "langTrad": "esp", "meaningTrad": "[Índice de] superficies cariadas, perdidas y rellenas", "abbreviationTrad": "CPOS"},
+            {"lang": "eng", "meaning": "Distant-metastasis free survival", "langTrad": "esp", "meaningTrad": "Supervivencia libre de metástasis distantes, supervivencia libre de metástasis a distancia", "abbreviationTrad": "SLMD"}
+        ]
+    },
+    {
         "abbLowerCase": "dor",
         "abbreviation": "DoR, DOR",
         "use": "sigla",
@@ -254,6 +273,15 @@
             {"lang": "eng", "meaning": "Duration of response (DoR)", "langTrad": "esp", "meaningTrad": "Duración de la respuesta", "abbreviationTrad": "DR"},
             {"lang": "eng", "meaning": "Diagnostic odds ratio (DOR)", "langTrad": "esp", "meaningTrad": "Razón de momios diagnóstica, razón de oportunidades diagnóstica, razón de probabilidades diagnóstica", "abbreviationTrad": "RMD"}
         ]
+    },
+    {
+        "abbLowerCase": "dorv",
+        "abbreviation": "DORV",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Double outlet right ventricle", "langTrad": "esp", "meaningTrad": "Doble salida ventricular derecha", "abbreviationTrad": "DSVD"},
+            ]
     },
     {
         "abbLowerCase": "dp",
@@ -272,6 +300,15 @@
         "meanings": [
             {"lang": "esp", "meaning": "Duración de la respuesta", "langTrad": "eng", "meaningTrad": "Duration of response", "abbreviationTrad": "DoR"}
         ]
+    },
+    {
+        "abbLowerCase": "dsvd",
+        "abbreviation": "DSVD",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Doble salida ventricular derecha", "langTrad": "eng", "meaningTrad": "Double outlet right ventricle", "abbreviationTrad": "DORV"},
+            ]
     },
     {
         "abbLowerCase": "eac",
@@ -402,6 +439,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Falla cardíaca", "langTrad": "eng", "meaningTrad": "Heart failure", "abbreviationTrad": "HF"}
+        ]
+    },
+    {
+        "abbLowerCase": "fevi",
+        "abbreviation": "FEVI",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Fracción de eyección ventricular izquierda, fracción de eyección del ventrículo izquierdo", "langTrad": "eng", "meaningTrad": "Left ventricular ejection fraction", "abbreviationTrad": "LVEF"}
         ]
     },
     {
@@ -659,6 +705,24 @@
         ]
     },
     {
+        "abbLowerCase": "lv",
+        "abbreviation": "LV",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Left ventricle", "langTrad": "esp", "meaningTrad": "Ventrículo izquierdo", "abbreviationTrad": "VI"}
+        ]
+    },
+    {
+        "abbLowerCase": "lvef",
+        "abbreviation": "LVEF",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Left ventricular ejection fraction", "langTrad": "esp", "meaningTrad": "Fracción de eyección ventricular izquierda, fracción de eyección del ventrículo izquierdo", "abbreviationTrad": "FEVI"}
+        ]
+    },
+    {
         "abbLowerCase": "mrd",
         "abbreviation": "MRD",
         "use": "sigla",
@@ -868,6 +932,15 @@
         ]
     },
     {
+        "abbLowerCase": "rv",
+        "abbreviation": "RV",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Right ventricle", "langTrad": "esp", "meaningTrad": "Ventrículo derecho", "abbreviationTrad": "VD"}
+        ]
+    },
+    {
         "abbLowerCase": "sd",
         "abbreviation": "SD",
         "use": "sigla",
@@ -939,6 +1012,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Supervivencia libre de enfermedad invasiva", "langTrad": "eng", "meaningTrad": "Invasive disease-free survival", "abbreviationTrad": "iDFS"}
+        ]
+    },
+    {
+        "abbLowerCase": "slmd",
+        "abbreviation": "SLMD",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Supervivencia libre de metástasis distantes, supervivencia libre de metástasis a distancia", "langTrad": "eng", "meaningTrad": "Distant-metastasis free survival", "abbreviationTrad": "DMFS"}
         ]
     },
     {
@@ -1038,6 +1120,24 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Time to progression", "langTrad": "esp", "meaningTrad": "Tiempo hasta la progresión", "abbreviationTrad": "TP"}
+        ]
+    },
+    {
+        "abbLowerCase": "vd",
+        "abbreviation": "VD",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Ventrículo derecho", "langTrad": "eng", "meaningTrad": "Right ventricle", "abbreviationTrad": "RV"}
+        ]
+    },
+    {
+        "abbLowerCase": "vi",
+        "abbreviation": "VI",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Ventrículo izquierdo", "langTrad": "eng", "meaningTrad": "Left ventricle", "abbreviationTrad": "LV"}
         ]
     },
     {

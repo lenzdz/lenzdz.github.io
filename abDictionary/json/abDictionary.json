@@ -1,5 +1,14 @@
 [
     {
+        "abbLowerCase": "ac",
+        "abbreviation": "AC",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Adjuvant chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia adyuvante", "abbreviationTrad": "QTA"}
+        ]
+    },
+    {
         "abbLowerCase": "acd",
         "abbreviation": "ACD",
         "use": "sigla",
@@ -33,6 +42,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Acquired immunodeficiency syndrome", "langTrad": "esp", "meaningTrad": "Síndrome de inmunodeficiencia adquirida", "abbreviationTrad": "SIDA"}
+        ]
+    },
+    {
+        "abbLowerCase": "ajcc",
+        "abbreviation": "AJCC",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "American Joint Committee on Cancer", "langTrad": "esp", "meaningTrad": "Comité Conjunto Estadounidense sobre el Cáncer", "abbreviationTrad": "AJCC, por sus siglas en inglés"}
         ]
     },
     {
@@ -81,6 +99,15 @@
         ]
     },
     {
+        "abbLowerCase": "art",
+        "abbreviation": "ART",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+                {"lang": "eng", "meaning": "Adjuvant radiotherapy", "langTrad": "esp", "meaningTrad": "Radioterapia adyuvante", "abbreviationTrad": "RTA"}
+        ]
+    },
+    {
         "abbLowerCase": "ascvd",
         "abbreviation": "ASCVD",
         "use": "sigla",
@@ -96,6 +123,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Breast cancer", "langTrad": "esp", "meaningTrad": "Cáncer de mama", "abbreviationTrad": "CM, CaM"}
+        ]
+    },
+    {
+        "abbLowerCase": "bid",
+        "abbreviation": "BID",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Dos veces al día", "langTrad": "eng", "meaningTrad": "Twice a day", "abbreviationTrad": "BID"}
         ]
     },
     {
@@ -154,6 +190,15 @@
         ]
     },
     {
+        "abbLowerCase": "ccrt",
+        "abbreviation": "CCRT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Concurrent chemoradiotherapy", "langTrad": "esp", "meaningTrad": "Quimiorradioterapia concurrente, quimiorradioterapia concomitante", "abbreviationTrad": "QRC o QRTC"}
+        ]
+    },
+    {
         "abbLowerCase": "ci",
         "abbreviation": "CI",
         "use": "sigla",
@@ -169,6 +214,60 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Cáncer de mama", "langTrad": "eng", "meaningTrad": "Breast cancer", "abbreviationTrad": "BC"}
+        ]
+    },
+    {
+        "abbLowerCase": "copd",
+        "abbreviation": "COPD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Chronic obstructive pulmonary disease", "langTrad": "esp", "meaningTrad": "Enfermedad pulmonar obstructiva crónica", "abbreviationTrad": "EPOC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cpcnp",
+        "abbreviation": "CPCNP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Cáncer de pulmón no microcítico, cáncer de pulmón de células no pequeñas", "langTrad": "eng", "meaningTrad": "Non-small cell lung cancer", "abbreviationTrad": "NSCLC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cpcp",
+        "abbreviation": "CPCP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Cáncer de pulmón microcítico, cáncer de pulmón de células pequeñas", "langTrad": "eng", "meaningTrad": "Small cell lung cancer", "abbreviationTrad": "SCLC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cpm",
+        "abbreviation": "CPM",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Cáncer de pulmón microcítico, cáncer de pulmón de células pequeñas", "langTrad": "eng", "meaningTrad": "Small cell lung cancer", "abbreviationTrad": "SCLC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cpnm",
+        "abbreviation": "CPNM",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Cáncer de pulmón no microcítico, cáncer de pulmón de células no pequeñas", "langTrad": "eng", "meaningTrad": "Non-small cell lung cancer", "abbreviationTrad": "NSCLC"}
+        ]
+    },
+    {
+        "abbLowerCase": "cpod",
+        "abbreviation": "CPOD",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "[Índice de] dientes cariados, perdidos y rellenos", "langTrad": "eng", "meaningTrad": "Decayed, missing, and filled teeth [index]", "abbreviationTrad": "DMFT"}
         ]
     },
     {
@@ -196,7 +295,17 @@
         "use": "sigla",
         "language": "inglés",
         "meanings": [
+            {"lang": "eng", "meaning": "Chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia", "abbreviationTrad": "QT"},
             {"lang": "eng", "meaning": "Computed tomography, computerized tomography", "langTrad": "esp", "meaningTrad": "Tomografía computarizada", "abbreviationTrad": "TC"}
+        ]
+    },
+    {
+        "abbLowerCase": "ctx",
+        "abbreviation": "CTX, CTx",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia", "abbreviationTrad": "QT"}
         ]
     },
     {
@@ -255,6 +364,15 @@
         ]
     },
     {
+        "abbLowerCase": "dmf",
+        "abbreviation": "DMF",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Drug master file", "langTrad": "esp", "meaningTrad": "Archivo maestro de medicamentos", "abbreviationTrad": "DMF, por sus siglas en inglés"}
+        ]
+    },
+    {
         "abbLowerCase": "dmfs",
         "abbreviation": "DMFS",
         "use": "sigla",
@@ -262,6 +380,15 @@
         "meanings": [
             {"lang": "eng", "meaning": "Decayed, missing, and filled surfaces [index]", "langTrad": "esp", "meaningTrad": "[Índice de] superficies cariadas, perdidas y rellenas", "abbreviationTrad": "CPOS"},
             {"lang": "eng", "meaning": "Distant-metastasis free survival", "langTrad": "esp", "meaningTrad": "Supervivencia libre de metástasis distantes, supervivencia libre de metástasis a distancia", "abbreviationTrad": "SLMD"}
+        ]
+    },
+    {
+        "abbLowerCase": "dmft",
+        "abbreviation": "DMFT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Decayed, missing, and filled teeth [index]", "langTrad": "esp", "meaningTrad": "[Índice de] superficies cariadas, perdidas y rellenas", "abbreviationTrad": "CPOD"}
         ]
     },
     {
@@ -411,6 +538,15 @@
         ]
     },
     {
+        "abbLowerCase": "epoc",
+        "abbreviation": "EPOC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad pulmonar obstructiva crónica", "langTrad": "eng", "meaningTrad": "Chronic obstructive pulmonary disease", "abbreviationTrad": "COPD"}
+        ]
+    },
+    {
         "abbLowerCase": "er",
         "abbreviation": "ER",
         "use": "sigla",
@@ -430,6 +566,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Emergency ward", "langTrad": "esp", "meaningTrad": "Departamento de emergencias", "abbreviationTrad": "DE"}
+        ]
+    },
+    {
+        "abbLowerCase": "fda",
+        "abbreviation": "FDA",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Food and Drug Administration, U.S. Food and Drug Administration", "langTrad": "esp", "meaningTrad": "Administración de Alimentos y Medicamentos, Administración de Alimentos y Medicamentos de los Estados Unidos", "abbreviationTrad": "FDA, por sus siglas en inglés"}
         ]
     },
     {
@@ -580,10 +725,11 @@
         "abbLowerCase": "ic",
         "abbreviation": "IC",
         "use": "sigla",
-        "language": "español",
+        "language": "español e inglés",
         "meanings": [
             {"lang": "esp", "meaning": "Insuficiencia cardíaca", "langTrad": "eng", "meaningTrad": "Heart failure", "abbreviationTrad": "HF"},
-            {"lang": "esp", "meaning": "Intervalo de confianza", "langTrad": "eng", "meaningTrad": "Confidence interval", "abbreviationTrad": "CI"}
+            {"lang": "esp", "meaning": "Intervalo de confianza", "langTrad": "eng", "meaningTrad": "Confidence interval", "abbreviationTrad": "CI"},
+            {"lang": "eng", "meaning": "Induction chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia de inducción", "abbreviationTrad": "QI"}
         ]
     },
     {
@@ -620,6 +766,15 @@
         "language": "español",
         "meanings": [
             {"lang": "eng", "meaning": "Índice de masa corporal", "langTrad": "esp", "meaningTrad": "Body mass index", "abbreviationTrad": "BMI"}
+        ]
+    },
+    {
+        "abbLowerCase": "imrt",
+        "abbreviation": "IMRT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+                {"lang": "eng", "meaning": "Intensity-modulated radiation therapy", "langTrad": "esp", "meaningTrad": "Radioterapia de intensidad modulada", "abbreviationTrad": "IMRT, por sus siglas en inglés"}
         ]
     },
     {
@@ -741,6 +896,42 @@
         ]
     },
     {
+        "abbLowerCase": "nac",
+        "abbreviation": "NAC",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Neodjuvant chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia neoadyuvante", "abbreviationTrad": "QTN"}
+        ]
+    },
+    {
+        "abbLowerCase": "nact",
+        "abbreviation": "NACT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Neodjuvant chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia neoadyuvante", "abbreviationTrad": "QTN"}
+        ]
+    },
+    {
+        "abbLowerCase": "neo-ct",
+        "abbreviation": "Neo-CT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Neodjuvant chemotherapy", "langTrad": "esp", "meaningTrad": "Quimioterapia neoadyuvante", "abbreviationTrad": "QTN"}
+        ]
+    },
+    {
+        "abbLowerCase": "nsclc",
+        "abbreviation": "NSCLC",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Non-small cell lung cancer", "langTrad": "esp", "meaningTrad": "Cáncer de pulmón no microcítico, cáncer de pulmón de células no pequeñas", "abbreviationTrad": "CPNM o CPCNP"}
+        ]
+    },
+    {
         "abbLowerCase": "oms",
         "abbreviation": "OMS",
         "use": "sigla",
@@ -831,12 +1022,75 @@
         ]
     },
     {
+        "abbLowerCase": "qi",
+        "abbreviation": "QI",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Quimioterapia de inducción", "langTrad": "eng", "meaningTrad": "Induction chemotherapy", "abbreviationTrad": "IC"}
+        ]
+    },
+    {
         "abbLowerCase": "qol",
         "abbreviation": "QoL",
         "use": "sigla",
         "language": "inglés y español",
         "meanings": [
             {"lang": "eng", "meaning": "Quality of life", "langTrad": "esp", "meaningTrad": "Calidad de vida", "abbreviationTrad": "QoL, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "qrc",
+        "abbreviation": "QRC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Quimiorradioterapia concurrente, quimiorradioterapia concomitante", "langTrad": "eng", "meaningTrad": "Concurrent chemoradiotherapy", "abbreviationTrad": "CCRT"}
+        ]
+    },
+    {
+        "abbLowerCase": "qrtc",
+        "abbreviation": "QRTC",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Quimiorradioterapia concurrente, quimiorradioterapia concomitante", "langTrad": "eng", "meaningTrad": "Concurrent chemoradiotherapy", "abbreviationTrad": "CCRT"}
+        ]
+    },
+    {
+        "abbLowerCase": "qt",
+        "abbreviation": "QT",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Quimioterapia", "langTrad": "eng", "meaningTrad": "Chemotherapy", "abbreviationTrad": "CT, CTX o CTx"}
+        ]
+    },
+    {
+        "abbLowerCase": "qta",
+        "abbreviation": "QTA",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Quimioterapia adyuvante", "langTrad": "eng", "meaningTrad": "Adjuvant chemotherapy", "abbreviationTrad": "AC"}
+        ]
+    },
+    {
+        "abbLowerCase": "qtn",
+        "abbreviation": "QTN",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Quimioterapia neoadyuvante", "langTrad": "eng", "meaningTrad": "Neodjuvant chemotherapy", "abbreviationTrad": "NAC,  NACT o Neo-CT"}
+        ]
+    },
+    {
+        "abbLowerCase": "qwk",
+        "abbreviation": "QWK",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Each week", "langTrad": "esp", "meaningTrad": "Cada semana", "abbreviationTrad": "c/ semana"}
         ]
     },
     {
@@ -932,12 +1186,66 @@
         ]
     },
     {
+        "abbLowerCase": "rt",
+        "abbreviation": "RT",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+                {"lang": "esp", "meaning": "Radioterapia", "langTrad": "eng", "meaningTrad": "Radiotherapy", "abbreviationTrad": "RT"}
+        ]
+    },
+    {
+        "abbLowerCase": "rta",
+        "abbreviation": "RTA",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+                {"lang": "esp", "meaning": "Radioterapia adyuvante", "langTrad": "eng", "meaningTrad": "Adjuvant radiotherapy", "abbreviationTrad": "ART"}
+        ]
+    },
+    {
+        "abbLowerCase": "rtr",
+        "abbreviation": "RTR",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+                {"lang": "esp", "meaning": "Radioterapia de rescate, radioterapia de salvamento", "langTrad": "eng", "meaningTrad": "Salvage radiotherapy", "abbreviationTrad": "SRT"}
+        ]
+    },
+    {
+        "abbLowerCase": "rts",
+        "abbreviation": "RTS",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+                {"lang": "esp", "meaning": "Radioterapia de salvamento, radioterapia de rescate", "langTrad": "eng", "meaningTrad": "Salvage radiotherapy", "abbreviationTrad": "SRT"}
+        ]
+    },
+    {
+        "abbLowerCase": "rtt",
+        "abbreviation": "RTT",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+                {"lang": "esp", "meaning": "Radioterapia torácica", "langTrad": "eng", "meaningTrad": "Thoracic radiotherapy", "abbreviationTrad": "TRT"}
+        ]
+    },
+    {
         "abbLowerCase": "rv",
         "abbreviation": "RV",
         "use": "sigla",
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Right ventricle", "langTrad": "esp", "meaningTrad": "Ventrículo derecho", "abbreviationTrad": "VD"}
+        ]
+    },
+    {
+        "abbLowerCase": "sclc",
+        "abbreviation": "SCLC",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Small cell lung cancer", "langTrad": "esp", "meaningTrad": "Cáncer de pulmón microcítico, cáncer de pulmón de células pequeñas", "abbreviationTrad": "CPNM o CPCNP"}
         ]
     },
     {
@@ -1033,6 +1341,15 @@
         ]
     },
     {
+        "abbLowerCase": "srt",
+        "abbreviation": "SRT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+                {"lang": "eng", "meaning": "Salvage radiotherapy", "langTrad": "esp", "meaningTrad": "Radioterapia de rescate, radioterapia de salvamento", "abbreviationTrad": "RTR o RTS"}
+        ]
+    },
+    {
         "abbLowerCase": "stui",
         "abbreviation": "STUI",
         "use": "sigla",
@@ -1111,6 +1428,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Tasa de respuesta objetiva", "langTrad": "eng", "meaningTrad": "Objective response rate", "abbreviationTrad": "ORR"}
+        ]
+    },
+    {
+        "abbLowerCase": "trt",
+        "abbreviation": "TRT",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+                {"lang": "eng", "meaning": "Thoracic radiotherapy", "langTrad": "esp", "meaningTrad": "Radioterapia torácica", "abbreviationTrad": "RTT"}
         ]
     },
     {

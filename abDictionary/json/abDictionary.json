@@ -280,8 +280,8 @@
         "use": "sigla",
         "language": "inglés",
         "meanings": [
-            {"lang": "eng", "meaning": "Double outlet right ventricle", "langTrad": "esp", "meaningTrad": "Doble salida ventricular derecha", "abbreviationTrad": "DSVD"},
-            ]
+            {"lang": "eng", "meaning": "Double outlet right ventricle", "langTrad": "esp", "meaningTrad": "Doble salida ventricular derecha", "abbreviationTrad": "DSVD"}
+        ]
     },
     {
         "abbLowerCase": "dp",
@@ -307,8 +307,8 @@
         "use": "sigla",
         "language": "español",
         "meanings": [
-            {"lang": "esp", "meaning": "Doble salida ventricular derecha", "langTrad": "eng", "meaningTrad": "Double outlet right ventricle", "abbreviationTrad": "DORV"},
-            ]
+            {"lang": "esp", "meaning": "Doble salida ventricular derecha", "langTrad": "eng", "meaningTrad": "Double outlet right ventricle", "abbreviationTrad": "DORV"}
+        ]
     },
     {
         "abbLowerCase": "eac",

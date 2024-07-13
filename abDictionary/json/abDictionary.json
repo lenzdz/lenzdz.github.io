@@ -1,5 +1,14 @@
 [
     {
+        "abbLowerCase": "abap",
+        "abbreviation": "ABAP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Agonistas β₂ de acción prolongada, agonistas β₂ adrenérgicos de acción prolongada", "langTrad": "eng", "meaningTrad": "Long-acting β₂-agonist", "abbreviationTrad": "LABA"}
+        ]
+    },
+    {
         "abbLowerCase": "ac",
         "abbreviation": "AC",
         "use": "sigla",
@@ -60,6 +69,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Acute lymphocytic leukemia", "langTrad": "esp", "meaningTrad": "Leucemia linfoblástica aguda", "abbreviationTrad": "LLA"}
+        ]
+    },
+    {
+        "abbLowerCase": "amap",
+        "abbreviation": "AMAP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Antagonistas muscarínicos de acción prolongada", "langTrad": "eng", "meaningTrad": "Long-acting muscarinic antagonist", "abbreviationTrad": "LAMA"}
         ]
     },
     {
@@ -287,6 +305,15 @@
         "meanings": [
             {"lang": "esp", "meaning": "Cociente de riesgos", "langTrad": "eng", "meaningTrad": "Hazard ratio", "abbreviationTrad": "HR"},
             {"lang": "eng", "meaning": "Complete response", "langTrad": "esp", "meaningTrad": "Respuesta completa", "abbreviationTrad": "RP"}
+        ]
+    },
+    {
+        "abbLowerCase": "csi",
+        "abbreviation": "CSI",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Corticosteroide inhalado", "langTrad": "eng", "meaningTrad": "Inhaled corticosteroid", "abbreviationTrad": "ICS"}
         ]
     },
     {
@@ -587,6 +614,15 @@
         ]
     },
     {
+        "abbLowerCase": "fev1",
+        "abbreviation": "FEV₁",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Forced expiratory volume in one second", "langTrad": "eng", "meaningTrad": "Volumen espiratorio forzado en un segundo, volumen espiratorio forzado en el primer segundo", "abbreviationTrad": "FEV₁, por sus siglas en inglés"}
+        ]
+    },
+    {
         "abbLowerCase": "fevi",
         "abbreviation": "FEVI",
         "use": "sigla",
@@ -733,6 +769,15 @@
         ]
     },
     {
+        "abbLowerCase": "ics",
+        "abbreviation": "ICS",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Inhaled corticosteroid", "langTrad": "esp", "meaningTrad": "Corticosteroide inhalado", "abbreviationTrad": "CSI"}
+        ]
+    },
+    {
         "abbLowerCase": "icfer",
         "abbreviation": "ICFEr",
         "use": "sigla",
@@ -812,6 +857,24 @@
         "meanings": [
             {"lang": "eng", "meaning": "Kidney disease", "langTrad": "esp", "meaningTrad": "Enfermedad renal", "abbreviationTrad": "ER"},
             {"lang": "eng", "meaning": "Kawasaki disease", "langTrad": "esp", "meaningTrad": "Enfermedad de Kawasaki", "abbreviationTrad": "EK"}
+        ]
+    },
+    {
+        "abbLowerCase": "laba",
+        "abbreviation": "LABA",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Long-acting β₂-agonist", "langTrad": "esp", "meaningTrad": "Agonistas β₂ de acción prolongada, agonistas β₂ adrenérgicos de acción prolongada", "abbreviationTrad": "ABAP, β2AP o LABA, por sus siglas en inglés"}
+        ]
+    },
+    {
+        "abbLowerCase": "lama",
+        "abbreviation": "LAMA",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Long-acting muscarinic antagonist", "langTrad": "esp", "meaningTrad": "Antagonistas muscarínicos de acción prolongada", "abbreviationTrad": "AMAP"}
         ]
     },
     {
@@ -1482,6 +1545,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "World Health Organization", "langTrad": "esp", "meaningTrad": "Organización Mundial de la Salud", "abbreviationTrad": "OMS"}
+        ]
+    },
+    {
+        "abbLowerCase": "β2ap",
+        "abbreviation": "β2AP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Agonistas β₂ de acción prolongada, agonistas β₂ adrenérgicos de acción prolongada", "langTrad": "eng", "meaningTrad": "Long-acting β₂-agonist", "abbreviationTrad": "LABA"}
         ]
     }
 ]

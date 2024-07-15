@@ -538,6 +538,25 @@
         ]
     },
     {
+        "abbLowerCase": "egf",
+        "abbreviation": "EGF",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Epidermal growth factor", "langTrad": "esp", "meaningTrad": "Factor de crecimiento epidérmico", "abbreviationTrad": "FCE"}
+        ]
+    },
+    {
+        "abbLowerCase": "egfr",
+        "abbreviation": "EGFR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Epidermal growth factor receptor (EGFR)", "langTrad": "esp", "meaningTrad": "Receptor del factor de crecimiento epidérmico", "abbreviationTrad": "RFCE"},
+            {"lang": "eng", "meaning": "Estimated glomerular filtration rate (eGFR)", "langTrad": "esp", "meaningTrad": "Tasa de filtración glomerular estimada", "abbreviationTrad": "TFGe"}
+        ]
+    },
+    {
         "abbLowerCase": "eich",
         "abbreviation": "EICH",
         "use": "sigla",
@@ -593,6 +612,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Emergency ward", "langTrad": "esp", "meaningTrad": "Departamento de emergencias", "abbreviationTrad": "DE"}
+        ]
+    },
+    {
+        "abbLowerCase": "fce",
+        "abbreviation": "FCE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Factor de crecimiento epidérmico", "langTrad": "eng", "meaningTrad": "Epidermal growth factor", "abbreviationTrad": "EGF"}
         ]
     },
     {
@@ -656,6 +684,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Functional status", "langTrad": "esp", "meaningTrad": "Estado funcional", "abbreviationTrad": "EF"}
+        ]
+    },
+    {
+        "abbLowerCase": "gfr",
+        "abbreviation": "GFR",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Glomerular filtration rate", "langTrad": "esp", "meaningTrad": "Tasa de filtración glomerular", "abbreviationTrad": "TFG"}
         ]
     },
     {
@@ -1194,6 +1231,15 @@
         ]
     },
     {
+        "abbLowerCase": "rfce",
+        "abbreviation": "RFCE",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Receptor del factor de crecimiento epidérmico", "langTrad": "eng", "meaningTrad": "Epidermal growth factor receptor", "abbreviationTrad": "EGFR"}
+        ]
+    },
+    {
         "abbLowerCase": "rm",
         "abbreviation": "RM",
         "use": "sigla",
@@ -1464,6 +1510,33 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Tomografía por emisión de positrones con tomografía computarizada", "langTrad": "eng", "meaningTrad": "Positron emission tomography and computed tomography", "abbreviationTrad": "PET-CT"}
+        ]
+    },
+    {
+        "abbLowerCase": "tfg",
+        "abbreviation": "TFG",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Tasa de filtración glomerular", "langTrad": "eng", "meaningTrad": "Glomerular filtration rate", "abbreviationTrad": "GFR"}
+        ]
+    },
+    {
+        "abbLowerCase": "tfge",
+        "abbreviation": "TFGe",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "eng", "meaning": "Tasa de filtración glomerular estimada", "langTrad": "esp", "meaningTrad": "Estimated glomerular filtration rate", "abbreviationTrad": "eGFR"}
+        ]
+    }
+    {
+        "abbLowerCase": "tki",
+        "abbreviation": "TKI",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Tyrosine kinase inhibitor", "langTrad": "esp", "meaningTrad": "Inhibidor de la tirosina cinasa, inhibidor de la tirosina quinasa", "abbreviationTrad": "TKI, por sus siglas en inglés"}
         ]
     },
     {

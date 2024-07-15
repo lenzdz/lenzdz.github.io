@@ -1529,7 +1529,7 @@
         "meanings": [
             {"lang": "eng", "meaning": "Tasa de filtración glomerular estimada", "langTrad": "esp", "meaningTrad": "Estimated glomerular filtration rate", "abbreviationTrad": "eGFR"}
         ]
-    }
+    },
     {
         "abbLowerCase": "tki",
         "abbreviation": "TKI",

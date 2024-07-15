@@ -786,6 +786,24 @@
         ]
     },
     {
+        "abbLowerCase": "hscrp",
+        "abbreviation": "hs-CRP",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "High-sensitivity C-reactive protein", "langTrad": "esp", "meaningTrad": "Proteína C-reactiva de alta sensibilidad", "abbreviationTrad": "PCR-as"}
+        ]
+    },
+    {
+        "abbLowerCase": "hs-crp",
+        "abbreviation": "hs-CRP",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "High-sensitivity C-reactive protein", "langTrad": "esp", "meaningTrad": "Proteína C-reactiva de alta sensibilidad", "abbreviationTrad": "PCR-as"}
+        ]
+    },
+    {
         "abbLowerCase": "ibs",
         "abbreviation": "IBS",
         "use": "sigla",
@@ -1065,6 +1083,24 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Overall survival", "langTrad": "esp", "meaningTrad": "Supervivencia global", "abbreviationTrad": "SG"}
+        ]
+    },
+    {
+        "abbLowerCase": "pcras",
+        "abbreviation": "PCRas",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Proteína C-reactiva de alta sensibilidad", "langTrad": "eng", "meaningTrad": "High-sensitivity C-reactive protein", "abbreviationTrad": "hsCRP o hs-CRP"}
+        ]
+    },
+    {
+        "abbLowerCase": "pcr-as",
+        "abbreviation": "PCR-as",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Proteína C-reactiva de alta sensibilidad", "langTrad": "eng", "meaningTrad": "High-sensitivity C-reactive protein", "abbreviationTrad": "hsCRP o hs-CRP"}
         ]
     },
     {

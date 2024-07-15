@@ -163,6 +163,7 @@ request.onload = function () {
                 let meaningTrad = highlightMatch(definition.meaningTrad, searchedWord);
                 meaningTrad = highlightInexactMatch(meaningTrad, searchedWord);
 
+
                 meaning = mayusCorrection(definition.meaning, meaning);
                 meaningTrad = mayusCorrection(definition.meaningTrad, meaningTrad);
 
@@ -330,8 +331,13 @@ request.onload = function () {
     }
 
     function countUpperCases(text) {
-        const mayus = text.match(/[A-ZÁÉÍÓÚÜÑ]/g);
-        return mayus ? mayus.length : 0;
+        // Remove content in parenthesis (abbreviations, if existent)
+        const textWithoutParenthesis = text.replace(/\([^)]*\)/g, '');
+        // Regular expression to find upper cases
+        const regex = /[A-ZÁÉÍÓÚÜÑ]/g;
+        // Count matches
+        const numUpperCases = textWithoutParenthesis.match(regex);
+        return numUpperCases ? numUpperCases.length : 0;
     }
 
 };

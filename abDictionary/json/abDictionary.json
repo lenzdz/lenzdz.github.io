@@ -419,6 +419,33 @@
         ]
     },
     {
+        "abbLowerCase": "dm",
+        "abbreviation": "DM",
+        "use": "sigla",
+        "language": "español e inglés",
+        "meanings": [
+            {"lang": "esp", "meaning": "Diabetes mellitus", "langTrad": "eng", "meaningTrad": "Diabetes mellitus", "abbreviationTrad": "DM"}
+        ]
+    },
+    {
+        "abbLowerCase": "dm2",
+        "abbreviation": "DM2",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Diabetes mellitus tipo 2", "langTrad": "eng", "meaningTrad": "Type 2 diabetes mellitus", "abbreviationTrad": "T2D"}
+        ]
+    },
+    {
+        "abbLowerCase": "dmt2",
+        "abbreviation": "DMT2",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Diabetes mellitus tipo 2", "langTrad": "eng", "meaningTrad": "Type 2 diabetes mellitus", "abbreviationTrad": "T2DM"}
+        ]
+    },
+    {
         "abbLowerCase": "dor",
         "abbreviation": "DoR, DOR",
         "use": "sigla",
@@ -1501,6 +1528,24 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Síntomas del tracto urinario inferior", "langTrad": "eng", "meaningTrad": "Lower urinary tract symptoms", "abbreviationTrad": "LUTS"}
+        ]
+    },
+    {
+        "abbLowerCase": "t2d",
+        "abbreviation": "T2D",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Type 2 diabetes mellitus", "langTrad": "esp", "meaningTrad": "Diabetes mellitus tipo 2", "abbreviationTrad": "DM2"}
+        ]
+    },
+    {
+        "abbLowerCase": "t2dm",
+        "abbreviation": "T2DM",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Type 2 diabetes mellitus", "langTrad": "esp", "meaningTrad": "Diabetes mellitus tipo 2", "abbreviationTrad": "DMT2"}
         ]
     },
     {

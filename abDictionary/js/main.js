@@ -333,10 +333,21 @@ request.onload = function () {
     function countUpperCases(text) {
         // Remove content in parenthesis (abbreviations, if existent)
         const textWithoutParenthesis = text.replace(/\([^)]*\)/g, '');
+        
+        // Dividir la cadena en palabras
+        const words = textWithoutParenthesis.split(' ');
+
+        // Filtrar las palabras que no contienen guiones
+        const wordsWithoutDashes = words.filter(word => !word.includes('-'));
+
+        // Unir las palabras filtradas en una cadena
+        const filteredText = wordsWithoutDashes.join(' ');
+
         // Regular expression to find upper cases
         const regex = /[A-ZÁÉÍÓÚÜÑ]/g;
+
         // Count matches
-        const numUpperCases = textWithoutParenthesis.match(regex);
+        const numUpperCases = filteredText.match(regex);
         return numUpperCases ? numUpperCases.length : 0;
     }
 

@@ -584,6 +584,15 @@
         ]
     },
     {
+        "abbLowerCase": "ehgna",
+        "abbreviation": "EHGNA",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Enfermedad del hígado graso no alcohólica, enfermedad hepática grasa no alcohólica", "langTrad": "eng", "meaningTrad": "Non-alcoholic fatty liver disease", "abbreviationTrad": "NAFLD"}
+        ]
+    },
+    {
         "abbLowerCase": "eich",
         "abbreviation": "EICH",
         "use": "sigla",
@@ -1077,6 +1086,15 @@
         ]
     },
     {
+        "abbLowerCase": "nafld",
+        "abbreviation": "NAFLD",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Non-alcoholic fatty liver disease", "langTrad": "esp", "meaningTrad": "Enfermedad del hígado graso no alcohólica, enfermedad hepática grasa no alcohólica", "abbreviationTrad": "EHGNA"}
+        ]
+    },
+    {
         "abbLowerCase": "neo-ct",
         "abbreviation": "Neo-CT",
         "use": "sigla",
@@ -1146,6 +1164,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Orotracheal intubation", "langTrad": "esp", "meaningTrad": "Intubación orotraqueal", "abbreviationTrad": "IOT"}
+        ]
+    },
+    {
+        "abbLowerCase": "pcos",
+        "abbreviation": "PCOS",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Polycystic ovarian syndrome", "langTrad": "esp", "meaningTrad": "Síndrome de ovario poliquístico", "abbreviationTrad": "SOP"}
         ]
     },
     {
@@ -1546,6 +1573,15 @@
         "language": "español",
         "meanings": [
             {"lang": "esp", "meaning": "Supervivencia libre de progresión", "langTrad": "eng", "meaningTrad": "Progression-free survival", "abbreviationTrad": "PFS"}
+        ]
+    },
+    {
+        "abbLowerCase": "sop",
+        "abbreviation": "SOP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Síndrome de ovario poliquístico", "langTrad": "eng", "meaningTrad": "Polycystic ovarian syndrome", "abbreviationTrad": "PCOS"}
         ]
     },
     {

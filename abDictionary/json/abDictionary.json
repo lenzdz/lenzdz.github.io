@@ -1050,6 +1050,15 @@
         ]
     },
     {
+        "abbLowerCase": "mecp",
+        "abbreviation": "MECP",
+        "use": "sigla",
+        "language": "español",
+        "meanings": [
+            {"lang": "esp", "meaning": "Mortalidad específica por cáncer de próstata", "langTrad": "eng", "meaningTrad": "Prostate cancer–specific mortality", "abbreviationTrad": "PCSM"}
+        ]
+    },
+    {
         "abbLowerCase": "mrd",
         "abbreviation": "MRD",
         "use": "sigla",
@@ -1173,6 +1182,15 @@
         "language": "inglés",
         "meanings": [
             {"lang": "eng", "meaning": "Polycystic ovarian syndrome", "langTrad": "esp", "meaningTrad": "Síndrome de ovario poliquístico", "abbreviationTrad": "SOP"}
+        ]
+    },
+    {
+        "abbLowerCase": "pcsm",
+        "abbreviation": "PCSM",
+        "use": "sigla",
+        "language": "inglés",
+        "meanings": [
+            {"lang": "eng", "meaning": "Prostate cancer–specific mortality", "langTrad": "esp", "meaningTrad": "Mortalidad específica por cáncer de próstata", "abbreviationTrad": "MECP"}
         ]
     },
     {
